@@ -5,13 +5,10 @@
 * Cat.M1 장치의 TCP 데이터 송수신, SMS, GPS, 클라우드 서비스 연동 등에 대한 **가이드 문서**
 * [Arm MBED Web IDE](https://ide.mbed.com/compiler/) 상에서 동작하는 **예제 코드**
 
-
-## Overview
-
 ![][hw-stack-nucleo]
 
 ## Documentation
-개발 시작 가이드 및 응용 가이드 문서는 본 저장소의 **[Wiki](https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/wiki/)**에서 확인 할 수 있습니다.
+개발 시작 가이드 및 응용 가이드 문서는 본 저장소의 **[Wiki](https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/wiki/)** 에서 확인 할 수 있습니다.
 
 
 ## Folder Structure
@@ -61,6 +58,6 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 
 
 [forum]: ./docs/imgs/forum.jpg
-[hw-stack-nucleo]: ./docs/imgs/hw/wiot-shield-qc01-nucleo-l476rg.png
+[hw-stack-nucleo]: ./docs/imgs/hw/WIoT-Shield-QC01-Nucleo-L476RG.png
 
 
