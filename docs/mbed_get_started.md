@@ -61,7 +61,7 @@ IoT Shield는 다양한 밴더의 Cat.M1 모듈을 활용 할 수 있도록 하�
 
 MBED 기반에서 Nucleo-L476RG MCU 보드를 사용하는 경우 각 인터페이스 보드의 Jumper는 다음과 같이 설정합니다.
 
-| WIoT-QC01 Jumpers<bR> | WIoT-WM01 Jumpers | WIoT-AM01 Jumpers |
+| WIoT-QC01 Jumper settings<bR> | WIoT-WM01 Jumper settings | WIoT-AM01 Jumper settings |
 |:--------------------------:|:--------------------------:|:--------------------------:|
 |![][hw-settings-nucleo-qc01]|![][hw-settings-nucleo-wm01]|![][hw-settings-nucleo-am01]|
 
