@@ -1,4 +1,4 @@
-# MBED 기반의 Cat.M1 SMS 데이터 통신 가이드
+# MBED 기반의 Cat.M1 SMS 
 
 ## 목차
 
