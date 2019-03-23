@@ -418,12 +418,12 @@ HiveMQ MQTT broker의 Websocket client에 접속하여 예제의 topic을 subscr
 ![][5]
 
 
+[mbed-getting-started]: ./mbed_get_started.md
 [skt-iot-portal]: https://www.sktiot.com/iot/developer/guide/guide/catM1/menu_05/page_01
 [link-mbed-compiler]: https://ide.mbed.com/compiler/
 [link-nucleo-l476rg]: https://os.mbed.com/platforms/ST-Nucleo-L476RG/
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-mqtt-an]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_MQTT_Application_Note_V1.0.pdf
-
 
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
