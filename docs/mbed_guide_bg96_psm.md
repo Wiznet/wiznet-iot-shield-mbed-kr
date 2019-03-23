@@ -56,7 +56,7 @@ PSM을 사용하기 위해 **AT+CPSMS** 명령어를 사용하며, 파라미터 
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+CPSMS=[<Mode>[,(Requested_Periodic-RAU)[,(Requested_GPRS-READY-timer)[,(Requested_Periodic-TAU)[,(Requested_ActiveTime)]]]]] | OK<br><br>or<br><br>ERROR | AT+CPSMS=1,,,”10001010”,”00100100”<br>OK |
 | Read | AT+CPSMS? | +CPSMS: (mode),[(Requested_Periodic-RAU)],[(Requested_GPRS-READY-timer)],[(Requested_Periodic-TAU)],[(Requested_Active-Time)]<br><br>OK | AT+CPSMS?<br>+CPSMS: 1,,,"10001010","00100100"<br><br>OK |
@@ -81,7 +81,7 @@ AT+QPSMS 명령어는 AT+CPSMS와 거의 유사한 설정 및 파라메터를 �
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+CPSMS와 동일 |  |  |
 | Read | AT+CPSMS? | +CPSMS: (mode),[(Requested_Periodic-RAU)],[(Requested_GPRS-READY-timer)],[(Requested_Periodic-TAU)],[(Requested_Active-Time)]<br><br>OK | AT+QPSMS?<br>+QPSMS: 1,,,"600","240"<br><br>OK |
@@ -96,7 +96,7 @@ AT+QLTS 명령어는 모듈의 최근에 동기화 된 네트워크 시간 정�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+QLTS=(mode) | +QLTS: (time),(ds)<br><br>OK<br><br>ME 기능 관련 에러 발생 시,<br>+CME ERROR: (err)<br><br>그 외 에러 발생 시,<br><br>ERROR| AT+QLTS=2<br>+QLTS: "2019/03/21,16:11:59+36,0"<br><br>OK |
 
