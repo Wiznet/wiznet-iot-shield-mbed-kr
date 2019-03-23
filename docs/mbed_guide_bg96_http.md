@@ -57,7 +57,7 @@ HTTP 서버의 URL을 설정합니다. "http://" 또는 "https://"로 시작하�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QHTTPURL=? | +QHTTPURL: (1-700),(1-65535)<br><br>OK | - |
 | Read | AT+QHTTPURL? | +QHTTPURL: (URL)<br><br>OK | AT+QHTTPURL? <br>+QHTTPURL: http://www.wiznet.io<br><br>OK |
@@ -78,7 +78,7 @@ AT+QHTTPGET 명령은 HTTP 서버에게 GET Request를 전송합니다. 이 명�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QHTTPGET=? | +QHTTPGET: (1-65535),(1-2048),(1-65535)<br><br>OK | -|
 | Write | AT+QHTTPGET=(rsptime)| OK or +CME ERROR<br><br>+QHTTPGET: (err),(httprspcode),(content_length) | AT+QHTTPGET=10<br>OK<br>+QHTTPGET: 0,200,26 |
@@ -101,7 +101,7 @@ AT+QHTTPREAD 명령은 HTTP 서버에게 받은 HTTP Response 정보를 확인 �
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QHTTPREAD=? | +QHTTPREAD: (1-65535)<br><br>OK | -|
 | Write | AT+QHTTPREAD=(waittime)| CONNECT<br>(HTTP Response)<br>OK<br>+QHTTPREAD: (err) <br>or<br> +CME ERROR | AT+QHTTPREAD=80<br>CONNECT<br>.....<br>OK<br>+QHTTPREAD: 0
