@@ -7,14 +7,14 @@
 -   [AT 명령어](#Step-2-ATCommand)
 -   [동작 구조 예제](#Step-3-SampleCode)
 -   [예제 코드 빌드 및 실행](#Step-4-Build-and-Run)
--   [더 보기](#ReadMore)
+
 
 <a name="Prerequisites"></a>
 ## 시작하기 전에
 
 > * 하드웨어 설정과 개발환경 구축은 **[MBED 기반으로 Cat.M1 디바이스 개발 시작하기][mbed-getting-started]** 문서에 상세히 설명되어 있습니다.
 
-> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]**를 기준으로 작성되었습니다.
+> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
 
 
 ### Development Environment
@@ -23,11 +23,11 @@
 ### Hardware Requirement
 
 | MCU Board | IoT Shield Interface Board |
-|:--------:|:--------:|:--------:|
+|:--------:|:--------:|
 | [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-QC01 (BG96) |
 
 
-<a name="#Step-1-Overview"></a>
+<a name="Step-1-Overview"></a>
 ## 소개
 
 IoT 응용에서 배터리로 동작을 하는 디바이스의 경우, 디바이스가 소모하는 전류는 디바이스 수명과 직접적인 관계가 있으므로 소모 전류를 최소화 하는 것은 매우 중요합니다. 이와 같은 이유로 Cat.M1은 PSM과 Enhanced DRX(이하 eDRX)기술을 지원하여 소모하는 전류를 크게 줄일 수 있도록 합니다. PSM(Power Saving Mode)을 사용하면 디바이스의 Active/Sleep 상태를 조절하여 소모하는 전력을 줄일 수 있습니다.
@@ -40,7 +40,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 2. PSM 설정 확인
 3. 모듈 및 모뎀 Reboot
 
-<a name="#Step-2-ATCommand"></a>
+<a name="Step-2-ATCommand"></a>
 ## AT 명령어
 
 > AT 명령어에 대한 좀 더 상세한 설명은 Quectel AT Command Manual에서 확인 하실 수 있습니다.
@@ -109,7 +109,7 @@ AT+QLTS 명령어는 모듈의 최근에 동기화 된 네트워크 시간 정�
 | (ds) | String | Daylight saving time |
 
 
-<a name="#Step-3-SampleCode"></a>
+<a name="Step-3-SampleCode"></a>
 ## 동작 구조 예제
 
 WIZnet IoT Shield를 Standalone 모드로 동작시켜, 터미널 프로그램으로 직접 AT 명령어를 입력해 보면서 동작 순서를 확인합니다.
@@ -137,7 +137,7 @@ OK
 
 ```
 
-<a name="#Step-4-Build-and-Run"></a>
+<a name="Step-4-Build-and-Run"></a>
 ## 예제 코드 빌드 및 실행
 
 ### 1. Import project
@@ -193,7 +193,7 @@ int8_t setPsmDeactivate_BG96(void);
 ```cpp
 int8_t getPsmSetting_BG96(bool * enable, int * Requested_Periodic_TAU, int * Requested_Active_Time);
 ```
-* PSM 설정 정보를 확인합니다. 설정 정보를 저장할 변수들을 파라메터로 받아 활성화 여부 및 TAU, Active time을 돌려줍니다.
+* PSM 설정 정보를 확인합니다. 각종 변수들을 파라메터로 받아 활성화 여부 및 TAU, Active time을 돌려줍니다.
 * 확장 PSM 설정 명령어 기반으로 구현되어 시간 정보들을 초 단위로 리턴합니다.
 
 
@@ -232,23 +232,15 @@ Tera term 프로그램을 실행하여 이전 단계에서 확인된 보드의 C
 예제 코드는 Cat.M1 모듈의 상태를 확인한 후 PSM 설정 여부에 따라 PSM 설정 및 재시작 후 동작을 확인하도록 구성되어 있습니다.
 
 ![][1]
-..
-...
-....
+
+<br>.<br>
+<br>.<br>
+<br>.<br>
+
 ![][2]
 
 
-
-
-
-<a name="#ReadMore"></a>
-## 더 보기
-* [MBED 기반의 Cat.M1 TCP/IP 데이터 통신][mbed-guide-bg96-http]
-* [MBED 기반의 Cat.M1 HTTP 활용 가이드][mbed-guide-bg96-http]
-* [MBED 기반의 Cat.M1 MQTT 활용 가이드][mbed-guide-bg96-mqtt]
-
-
-
+[mbed-getting-started]: ./mbed_get_started.md
 [skt-iot-portal]: https://www.sktiot.com/iot/developer/guide/guide/catM1/menu_05/page_01
 [link-mbed-compiler]: https://ide.mbed.com/compiler/
 [link-nucleo-l476rg]: https://os.mbed.com/platforms/ST-Nucleo-L476RG/
@@ -256,14 +248,11 @@ Tera term 프로그램을 실행하여 이전 단계에서 확인된 보드의 C
 [link-bg96-gnss-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_GNSS_AT_Commands_Manual_V1.1.pdf
 [link-bg96-psm-an]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_PSM_Application_Note_V1.0.pdf
 
-[mbed-guide-bg96-tcp]: ./mbed_guide_bg96_tcp.md
-[mbed-guide-bg96-http]: ./mbed_guide_bg96_http.md
-[mbed-guide-bg96-mqtt]: ./mbed_guide_bg96_mqtt.md
+
 
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
-
 [1]: ./imgs/mbed_guide_bg96_psm-1.png
 [2]: ./imgs/mbed_guide_bg96_psm-2.png
 
