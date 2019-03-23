@@ -14,7 +14,7 @@
 
 > * 하드웨어 설정과 개발환경 구축은 **[MBED 기반으로 Cat.M1 디바이스 개발 시작하기][mbed-getting-started]** 문서에 상세히 설명되어 있습니다.
 
-> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]**를 기준으로 작성되었습니다.
+> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
 
 
 ### Development Environment
@@ -26,7 +26,7 @@
 |:--------:|:--------:|
 | [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-QC01 (BG96) |
 
-<a name="#Step-1-Overview"></a>
+<a name="Step-1-Overview"></a>
 ## 소개
 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 TCP 데이터 송수신 방법에 대한 가이드를 제공합니다.
 
@@ -45,7 +45,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 * PDP Context 활성화 및 비활성화: `AT+QIACT, AT+QIDEACT`
 
 
-<a name="#Step-2-ATCommand"></a>
+<a name="Step-2-ATCommand"></a>
 ## AT 명령어
 
 > AT 명령어에 대한 좀 더 상세한 설명은 Quectel AT Command Manual에서 확인 하실 수 있습니다.
@@ -254,7 +254,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 
 
-<a name="#Step-3-SampleCode"></a>
+<a name="Step-3-SampleCode"></a>
 ## 동작 구조 예제
 
 ```
@@ -301,7 +301,7 @@ AT+QIACT?
 
 ```
 
-<a name="#Step-4-Build-and-Run"></a>
+<a name="Step-4-Build-and-Run"></a>
 ## 예제 코드 빌드 및 실행
 
 ### 1. Import project
@@ -348,13 +348,16 @@ int  dest_port = 50001;
 
 샘플 코드는 아래와 같은 순서로 동작합니다.
 
-1. 하드웨어 초기화 과정
+* 하드웨어 초기화 과정
   * 시리얼 인터페이스 활성화 및 Parser 초기화
-2. Cat.M1 모듈 상태 확인
+  
+* Cat.M1 모듈 상태 확인
   * USIM 상태 확인
   * 망 등록 상태 점검
-3. PDP context 활성화
-4. TCP client 동작
+  
+* PDP context 활성화
+
+* TCP client 동작
   * 소켓 오픈 및 목적지(IP/Port) 연결
   * 데이터 송신 및 수신
 
