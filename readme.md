@@ -25,9 +25,9 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 
 ### Common Docs
 |        Title       |         Doc        |                            Description                           |
-|:------------------:|:------------------:|:----------------------------------------------------------------:|
+|:------------------:|:------------------:|:----------------------------------------------------------------|
 | [Quickstart Guide](https://github.com/Wiznet/wiznet-iot-shield-kr/blob/master/docs/quickstartguide_standalone_mode.md) | :heavy_check_mark: | Standalone 모드를 활용한 Cat.M1 모듈 테스트 |
-| [Hardware Guide](https://github.com/Wiznet/wiznet-iot-shield-kr/blob/master/docs/wiot_hw_overview_n_settings.md) | :heavy_check_mark: | WIoT 제품군의 하드웨어 구성 및 설정 가이드 |
+| [Hardware Guide](https://github.com/Wiznet/wiznet-iot-shield-hardware-kr/blob/master/docs/wiot_hw_overview_n_settings.md) | :heavy_check_mark: | WIoT 제품군의 하드웨어 구성 및 설정 가이드 |
 | [SKT Thingplug Guide](https://github.com/Wiznet/wiznet-iot-shield-kr/blob/master/docs/thingplug_guide_common.md) | :heavy_check_mark: | Cat.M1 장치의 SKT Thingplug 연동 가이드 (공통)  |
 
 ### Arm MBED Cat.M1 Samples and Docs
