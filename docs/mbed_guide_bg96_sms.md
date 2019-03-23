@@ -54,7 +54,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT*SMSMO=(value1),(value2),(value3),(value4),(value5) | OK or ERROR | AT&#42;SMSMO=010xxxxxxxx,010yyyyyyyy,1,1,BEC8B3E7C7CFBCBCBFE43F<br>OK<br>*SMSACK |
 
@@ -72,7 +72,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Read | AT&#42;SKT&#42;READMT=(value1) | &#42;SKT&#42;READMT:(value1),(value2),(value3),(value4),”(value5)” | AT&#42;SKT&#42;READMT=1<br>&#42;SKT&#42;READMT:1,20130109114519,01040144365,4098,TEST00000<br>OK |
 
@@ -101,7 +101,7 @@ EUC-KR 한글 변환은 온라인 상에서 손쉽게 확인해보실 수 있습
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT&#42;SKT&#42;NEWMSG=(value1) | &#42;SKT&#42;NEWMSG:(value1)<br>&#42;SKT&#42;NEWMSG:(value2),(value3),(value4),(value1),(value5) | AT&#42;SKT&#42;NEWMSG?<br>&#42;SKT&#42;NEWMSG:4098<br>OK<br>&#42;SKT&#42;NEWMSG:4,20130109124620,0104014xxxx,4098,New Message |
 
@@ -128,7 +128,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+CSCS=? | +CSCS: (list of supported chsets)<br> OK| - |
 | Read | AT+CSCS? | +CSCS: (chset) OK| - |
@@ -145,7 +145,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+CMGF=? | +CMGF: (list of supported modes)<br> OK| - |
 | Read | AT+CMGF? | +CMGF: (mode) OK| - |
@@ -162,7 +162,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+CMGS=? | OK| - |
 | Write | AT+CMGS=(da) | OK | AT+CMGS="1502101xxxx"<br>> This is a test from .... // 보낼 SMS  데이터 입력 후 Ctrl + z<br>+CMGS: 247<br>OK |
@@ -178,7 +178,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+CMGR=? | OK| - |
 | Write | AT+CMGR=(index)|+CMGR: (stat),(oa),(alpha),(scts),(tooa),(fo),(pid),(dcs),(sca),(tosca),(length)<br>(data)<br>OK | AT+CMGR=3<br>+CMGR: "REC UNREAD","0107576xxxx",,"19/02/26,09:17:13+36"<br>00480069<br>OK |
