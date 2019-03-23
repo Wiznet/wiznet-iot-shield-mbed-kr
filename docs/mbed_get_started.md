@@ -1,7 +1,6 @@
-MBED 기반으로 Cat.M1 디바이스 개발 시작하기
----
+# MBED 기반으로 Cat.M1 디바이스 개발 시작하기
 
-# 목차
+## 목차
 
 -   [소개](#Introduction)
 -   [Step 1: 필수 구성 요소](#Step-1-Prerequisites)
@@ -11,7 +10,7 @@ MBED 기반으로 Cat.M1 디바이스 개발 시작하기
 
 
 <a name="Introduction"></a>
-# 소개
+## 소개
 
 **문서의 주요 내용**
 
@@ -23,7 +22,7 @@ MBED 기반으로 Cat.M1 디바이스 개발 시작하기
 - 디바이스 상에서 Cat.M1 통신 기능 확인 과정
 
 
-# Step 1: 필수 구성 요소
+## Step 1: 필수 구성 요소
 이 문서를 따라하기 전에 다음과 같은 것들이 준비되어야 합니다.
 
 - **MBED 웹 컴파일러 개발환경을 활용 할 수 있는 컴퓨터**
@@ -46,9 +45,9 @@ MBED 기반으로 Cat.M1 디바이스 개발 시작하기
 > - 상용망 개통의 경우 USIM 구매 대리점이나 디바이스 구매처에 개통 문의
 
 <a name="Step-2-PrepareDevice"></a>
-# Step 2: 디바이스 준비
+## Step 2: 디바이스 준비
 
-## 하드웨어 설정
+### 하드웨어 설정
 
 WIZnet IoT Shield를 Nucleo-L476RG 하드웨어와 결합합니다. 
 - 두 장치 모두 Arduino UNO Rev3 호환 핀 커넥터를 지원하므로 손쉽게 결합(Stacking) 할 수 있습니다.
@@ -69,7 +68,7 @@ MBED 기반에서 Nucleo-L476RG MCU 보드를 사용하는 경우 각 인터페�
 > 해당 설정은 각 모듈 별로 Nucleo 보드의 `D2`, `D8` 핀에서 지원하는 UART와 인터페이스 하기 위한 설정입니다. `D0`, `D1` 핀을 UART로 활용하거나 MCU 보드 없이 Standalone 모드로 활용하려는 경우 하드웨어 저장소의 **Settings**를 참고하시기 바랍니다.
 
 
-## 디바이스 연결
+### 디바이스 연결
 
 하드웨어 설정 후 USB 커넥터를 이용하여 Nucleo-L476RG 보드와 PC를 연결합니다. PC 운영체제에서 보드와 연결된 COM 포트를 확인할 수 있습니다.
 > 윈도우 운영체제의 경우, 장치 관리자(Device Manager)에서 COM 포트를 확인할 수 있습니다.
@@ -83,9 +82,9 @@ MBED 기반에서 Nucleo-L476RG MCU 보드를 사용하는 경우 각 인터페�
 
 
 <a name="Step-3-Build"></a>
-# Step 3: 예제 코드 빌드 및 실행
+## Step 3: 예제 코드 빌드 및 실행
 
-## MBED 프로젝트 생성 및 예제 코드 Import
+### MBED 프로젝트 생성 및 예제 코드 Import
 
 MBED web compiler에 접속하여 Log in합니다. 만약 MBED 계정이 없을 경우 Sign up을 선택하여 계정을 생성할 수 있습니다.
 
@@ -121,7 +120,7 @@ MBED web compiler에 접속하여 Log in합니다. 만약 MBED 계정이 없을 
 
 ![][4]
 
-## MBED 플랫폼 보드 선택
+### MBED 플랫폼 보드 선택
 
 프로젝트 Import가 완료되면 하드웨어 플랫폼 보드를 선택합니다.
 오른쪽 상단 버튼을 클릭하면 활성화되는 `Select a Platform` 팝업에서 보드를 선택 할 수 있습니다.
@@ -148,7 +147,7 @@ Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드
 ![][9]
 
 
-## 프로그램 컴파일
+### 프로그램 컴파일
 
 상단 메뉴의 `Complie` 버튼을 클릭합니다.
 
@@ -168,7 +167,7 @@ Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드
 
 > MBED 플랫폼 보드는 `NODE_L746RG (F:)`와 같은 이름의 디스크 드라이브로 할당되어 있습니다. 이 곳에 생성된 펌웨어 바이너리 파일을 복사하면 됩니다.
 
-## 시리얼 터미널 연결 및 실행
+### 시리얼 터미널 연결 및 실행
 
 시리얼 터미널 프로그램을 실행하여 **디바이스 연결** 단계에서 확인한 보드의 COM 포트와 Baudrate 115200을 선택하여 시리얼 포트를 연결합니다.
 
@@ -184,11 +183,11 @@ Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드
 
 
 
-# 축하합니다
+## 축하합니다
 이제 여러분은 MBED 기반에서 WIZnet IoT Shield를 활용하여 LTE Cat.M1 응용을 개발할 모든 준비를 마쳤습니다!
 
 <a name="ReadMore"></a>
-# 더 보기
+## 더 보기
 * [MBED 기반의 Cat.M1 TCP/IP 데이터 통신][mbed-guide-bg96-http]
 * [MBED 기반의 Cat.M1 HTTP 활용 가이드][mbed-guide-bg96-http]
 * [MBED 기반의 Cat.M1 MQTT 활용 가이드][mbed-guide-bg96-mqtt]
