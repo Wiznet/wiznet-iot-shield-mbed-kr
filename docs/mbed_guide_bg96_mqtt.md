@@ -13,7 +13,7 @@
 
 > * 하드웨어 설정과 개발환경 구축은 **[MBED 기반으로 Cat.M1 디바이스 개발 시작하기][mbed-getting-started]** 문서에 상세히 설명되어 있습니다.
 
-> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]**를 기준으로 작성되었습니다.
+> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
 
 > * 아래 AT Command에 대한 설명은 MQTT 연동에 꼭 필요한 명령어만 설명하고 있습니다. 보다 자세한 설명은 Cat M1 모듈 매뉴얼을 참고하시기 바랍니다.
 
@@ -27,7 +27,7 @@
 |:--------:|:--------:|
 | [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-QC01 (BG96) |
 
-<a name="#Step-1-Overview"></a>
+<a name="Step-1-Overview"></a>
 ## 소개
 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 MQTT 데이터 송수신 방법에 대한 가이드를 제공합니다.
 
@@ -46,7 +46,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 
 
-<a name="#Step-2-ATCommand"></a>
+<a name="Step-2-ATCommand"></a>
 ## AT 명령어
 
 > 좀 더 상세한 AT 명령어 설명은 Quectel AT Command Manual에서 확인 하실 수 있습니다.
@@ -176,14 +176,14 @@ AT+QMTDISC 명령은 MQTT Broker와의 연결을 해제할 때 사용합니다.
 | (result) | Result of the command execution|
 
 
-<a name="#Step-3-SampleCode"></a>
+<a name="Step-3-SampleCode"></a>
 
 ## 동작 구조 예제 
 
 위에 설명한 대로, MQTT Broker는 HiveMQ(broker.hivemq.com:1883)를 사용합니다.
 HiveMQ를 사용하기 위한 별도의 설정은 필요 없고, DNS 주소와 MQTT 포트 번호만 기억하시면 됩니다.
 
-HiveMQ MQTT Websocket Client는 아래 링크에 가시면 별도의 설치 과정 없이 바로 테스트가 가능합니다.
+HiveMQ MQTT Websocket Client는 아래 링크에서 바로 테스트가 가능합니다.
 > * [HiveMQ Websocket Client](http://www.hivemq.com/demos/websocket-client/)
 
 먼저, HiveMQ MQTT Websocket Client를 HiveMQ Public Broker에 접속하도록 하겠습니다.
@@ -318,7 +318,8 @@ OK
 +QMTDISC: 0,0
 ```
 
-<a name="#Step-4-Build-and-Run"></a>
+<a name="Step-4-Build-and-Run"></a>
+
 ## 예제 코드 빌드 및 실행
 
 ### 1. Import project
@@ -423,6 +424,10 @@ HiveMQ MQTT broker의 Websocket client에 접속하여 예제의 topic을 subscr
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-mqtt-an]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_MQTT_Application_Note_V1.0.pdf
 
+
+[import1]: ./imgs/mbed_guide_webide_import.png
+[import2]: ./imgs/mbed_guide_webide_import_repo.png
+[compile]: ./imgs/mbed_guide_webide_compile.png
 [1]: ./imgs/mbed_guide_bg96_mqtt-1.png
 [2]: ./imgs/mbed_guide_bg96_mqtt-2.png
 [3]: ./imgs/mbed_guide_bg96_mqtt-3.png
