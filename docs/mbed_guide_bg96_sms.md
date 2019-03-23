@@ -25,10 +25,10 @@
 ### Hardware Requirement
 
 | MCU Board | IoT Shield Interface Board |
-|:--------:|:--------:|
+|:--------:|:--------|
 | [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-(WM-N400MSE)<br>WIoT-QC01 (BG96) |
 
-<a name="#Step-1-Overview"></a>
+<a name="Step-1-Overview"></a>
 ## 소개
 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 SMS 데이터 송수신 방법에 대한 가이드를 제공합니다.
 
@@ -36,7 +36,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 이번 테스트에서는 일반적인 스마트폰을 이용하여, Cat M1 모듈의 SMS 송수신 예제를 설명하도록 하겠습니다.
 
 
-<a name="#Step-2-ATCommand"></a>
+<a name="Step-2-ATCommand"></a>
 ## AT 명령어
 
 > 좀 더 상세한 AT 명령어 설명은 Quectel과 우리넷의 AT Command Manual에서 확인 하실 수 있습니다.
@@ -191,7 +191,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 **[ Note ]**
 AT Command의 자세한 파라미터는 해당 모듈의 매뉴얼을 참고하시기 바랍니다.
 
-<a name="#Step-3-SampleCode"></a>
+<a name="Step-3-SampleCode"></a>
 
 ## 동작 구조 예제 (우리넷 Cat.M1 SMS)
 
@@ -253,7 +253,7 @@ OK
 ![][2]
 
 
-<a name="#Step-4-Build-and-Run"></a>
+<a name="Step-4-Build-and-Run"></a>
 ## 예제 코드 빌드 및 실행
 
 ### 1. Import project
