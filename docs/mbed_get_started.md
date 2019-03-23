@@ -41,9 +41,9 @@ MBED 기반으로 Cat.M1 디바이스 개발 시작하기
   - Cat.M1 모듈로 통신 기능을 구현하려면 **망 개통 과정**이 선행되어야 합니다.
     - 한국의 경우, 국내 Cat.M1 서비스 사업자인 SK Telecom의 망 개통 과정이 필요합니다.
 
-  > 모듈은 개발 단계에 따라 시험망 개통 - 상용망 개통 단계를 거쳐야 하며 외장형 모뎀은 즉시 상용망 개통이 가능합니다.
-  > - 개발 중인 제품의 시험망 개통인 경우 [SKT IoT OpenHouse](https://www.sktiot.com/iot/support/openhouse/reservation/openhouseMain)에 기술 지원 문의
-  > - 상용망 개통의 경우 USIM 구매 대리점이나 디바이스 구매처에 개통 문의
+> 모듈은 개발 단계에 따라 시험망 개통 - 상용망 개통 단계를 거쳐야 하며 외장형 모뎀은 즉시 상용망 개통이 가능합니다.
+> - 개발 중인 제품의 시험망 개통인 경우 [SKT IoT OpenHouse](https://www.sktiot.com/iot/support/openhouse/reservation/openhouseMain)에 기술 지원 문의
+> - 상용망 개통의 경우 USIM 구매 대리점이나 디바이스 구매처에 개통 문의
 
 <a name="Step-2-PrepareDevice"></a>
 # Step 2: 디바이스 준비
@@ -131,6 +131,7 @@ MBED web compiler에 접속하여 Log in합니다. 만약 MBED 계정이 없을 
 ![][6]
 
 Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드를 선택할 수 있습니다.
+
 > 플랫폼 보드를 추가하는 과정은 각 보드 당 한 번만 수행하면 됩니다. 최초 추가 과정 이후에는 다른 프로젝트에서도 별도의 보드 추가 과정 없이 기존에 추가한 플랫폼 보드를 선택 할 수 있습니다.
 
 왼쪽 필터의 Target vendor - `STMicroelectonics`를 체크하여, ST 보드 중 본 가이드에서 활용할 `Nucleo-L476RG` 보드를 선택합니다.
@@ -174,6 +175,7 @@ Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드
 > 디버그 메시지 출력용 시리얼 포트 설정 정보: 115200-8-N-1, None
 
 펌웨어가 업데이트가 정상적으로 완료되면 다음과 같은 시리얼 출력을 확인할 수 있습니다.
+
 * 지정된 두 곳의 목적지로 Ping 요청 및 응답을 수행합니다.
   * 첫번째 목적지: 8.8.8.8 (Google DNS server, IP 주소 접속 테스트)
   * 두번째 목적지: www.google.com (Google, Domain 접속 테스트)
@@ -200,7 +202,7 @@ Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드
 [mbed-guide-bg96-http]: ./mbed_guide_bg96_http.md
 [mbed-guide-bg96-mqtt]: ./mbed_guide_bg96_mqtt.md
 
-[hw-stack-nucleo]: ./imgs/hw/wiot-shield-qc01-nucleo-l476rg.png
+[hw-stack-nucleo]: ./imgs/hw/WIoT-Shield-QC01-Nucleo-L476RG.png
 
 [hw-settings-nucleo-qc01]: ./imgs/hw/WIoT-QC01_JUMP_Arduino_serialD2_D8.png
 [hw-settings-nucleo-wm01]: ./imgs/hw/WIoT-WM01_JUMP_Arduino_serialD2_D8.png
