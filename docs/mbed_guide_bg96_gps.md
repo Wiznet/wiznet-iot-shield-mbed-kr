@@ -56,7 +56,7 @@ GPS 기능을 활성화 합니다.
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Read | AT+QGPS? | +QGPS: (gnssstate)<br><br>OK | - |
 | Write | AT+QGPS=(gnssmode)[,(fixmaxtime)[,(fixmaxdist)[,(fixcount)[,(fixrate)]]]] | OK<br><br>ME 관련 기능 Error 발생 시,<br>+CME ERROR: (errcode) | AT+QGPS=2<br><br>OK |
@@ -81,7 +81,7 @@ GPS 기능을 비활성화 합니다.
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+QGPSEND | OK<br><br>ME 관련 기능 Error 발생 시,<br>+CME ERROR: (errcode) | AT+QGPSEND<br><br>OK |
 
@@ -103,7 +103,7 @@ GPS 위치 정보를 출력합니다.
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+QGPSLOC=(mode) | +QGPSLOC: (UTC),(latitude),(longitude),(hdop),(altitude),(fix),(cog),(spkm),(spkn),(date),(nsat)<br><br>ME 관련 기능 Error 발생 시,<br>+CME ERROR: (errcode) | +QGPSLOC: 062122.0,37.37827,127.11290,1.4,88.0,2,143.07,0.0,0.0,180319,08<br><br>OK |
 
