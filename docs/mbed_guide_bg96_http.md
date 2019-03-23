@@ -27,7 +27,7 @@
 |:--------:|:--------:|
 | [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-QC01 (BG96) |
 
-<a name="#Step-1-Overview"></a>
+<a name="Step-1-Overview"></a>
 ## 소개
 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 HTTP 데이터 송수신 방법에 대한 가이드를 제공합니다.
 
@@ -39,7 +39,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 4. HTTP Response 확인
 5. 네트워크 인터페이스 비활성화
 
-<a name="#Step-2-ATCommand"></a>
+<a name="Step-2-ATCommand"></a>
 ## AT 명령어
 
 > 좀 더 상세한 AT 명령어 설명은 Quectel AT Command Manual에서 확인 하실 수 있습니다.
@@ -116,7 +116,7 @@ AT+QHTTPREAD 명령은 HTTP 서버에게 받은 HTTP Response 정보를 확인 �
 | (err) | Integer | Error code of operation |
 
 
-<a name="#Step-3-SampleCode"></a>
+<a name="Step-3-SampleCode"></a>
 
 ## 동작 구조 예제 #1 (헤더 없는 HTTP Get Response 받기)
 
@@ -224,7 +224,7 @@ OK
 +QHTTPREAD: 0
 ```
 
-<a name="#Step-4-Build-and-Run"></a>
+<a name="Step-4-Build-and-Run"></a>
 ## 예제 코드 빌드 및 실행
 
 ### 1. Import project
@@ -319,5 +319,9 @@ HTTP 요청에 대한 응답으로 기상청 날씨 정보를 획득하여 시�
 [link-nucleo-l476rg]: https://os.mbed.com/platforms/ST-Nucleo-L476RG/
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-http-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf
+
+[import1]: ./imgs/mbed_guide_webide_import.png
+[import2]: ./imgs/mbed_guide_webide_import_repo.png
+[compile]: ./imgs/mbed_guide_webide_compile.png
 
 [1]: ./imgs/mbed_guide_bg96_http-1.png
