@@ -61,7 +61,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | ATE(value) | OK | ATE0<br>OK |
 
@@ -79,7 +79,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Read | AT+CPIN? | +CPIN: (code) | AT+CPIN?<br>+CPIN: READY<br><br>OK |
 
@@ -99,7 +99,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Read | AT+QCDS | +QCDS: (status),"CAT-M",(PLMN),(cell_id),(channel),(type),(service_domain),(cell_id_p),(tac),(RSSI),(RSRP),(RSRQ),(TMSI),(RI),(CQI) | AT+QCDS<br>+QCDS: "SRV","CAT-M",45012,2500,13BD0B,R13,3,368,2058,-31,-55,-6,3,128,0,0,0<br><bR>OK |
 
@@ -129,7 +129,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QIACT=? | +QIACT: (1-16)<br><br>OK | - |
 | Read | AT+QIACT? | +QIACT:<br>(1,(context_state),(context_type)[,(IP_address)]<br>[.....<br>+QIACT:<br>(16,(context_state),(context_type)[,(IP_address)]]<br><br>OK | AT+QIACT?<br><br>+QIACT:<br> 1,1,2,"2001:2D8:13B1:4A65:0:0:A248:8002"<br><br> OK |
@@ -150,7 +150,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QIDEACT=? | +QIDEACT: (1-16)<br><br>OK | - |
 | Write | AT+QIDEACT=(contextID) | 지정된 ID의 Context를 비활성화:<br>OK or ERROR | AT+QIDEACT=1<br><br>OK |
@@ -171,7 +171,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+QIOPEN=(contextID),(connectID),(service_type),(IP_address)/(domain_name),(remote_port)[,(local_port)[,(access_mode)]] | transparent access 모드에서 성공적으로 소켓 서비스가 오픈된 경우:<br>CONNECT<br>실패한 경우:<br>ERROR<br><br>buffer access 모드 혹은 direct push 모드는 다음과 같이 출력:<br>OK<br><br>+QIOPEN: (connectID),(err)<br><br> *(err)이 0인 경우 소켓 서비스 오픈 성공 | AT+QIOPEN=1,0,"TCP","222.98.xxx.xxx",50001<br><br>OK<br>+QIOPEN: 0,0 |
 
@@ -197,7 +197,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | AT+QICLOSE=(connectID)[,(timeout)] | 성공적으로 Close 된 경우<br>OK<br><br>Close에 실패하는 경우<br>ERROR | AT+QICLOSE=0<br><br>OK |
 
@@ -217,7 +217,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | (service_type) "TCP", "UDP", "TCP INCOMING" 만 해당<br><br>AT+QISEND=(connectID),(send_length)<br>> 응답이 수신되면 (send_length)만큼의 데이터 전송 | > <br>(지정한 길이만큼 데이터 전송)<br><br>연결 상태에서 성공적으로 데이터 전송한 경우<br>SEND OK<br><br>연결 상태이나 데이터 전송이 실패한 경우<br>SEND FAIL<br><br>연결 상태가 아니거나, 비정상적으로 close 되거나, parameter가 정상적이지 않은 경우<br>ERROR | AT+QISEND=0,10<br>> helloworld<br><br>SEND OK |
 
@@ -239,7 +239,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 > "TCP" 모드 외의 (service_type)에 대한 명령어는 [BG96_TCP/IP_AT_Commands_Manual][link-bg96-tcp-manual]을 참고하시기 바랍니다.
 
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Write | (service_type) "TCP", "UDP", "TCP INCOMING" 만 해당<br><br>AT+QIRD=(connectID),[(read_length)]<br>| 지정한 연결에 수신된 데이터가 있을 경우<br>+QIRD: (read_actual_length)(CR)(LF)(data)<br><br>OK<br><br>만약 수신된 데이터가 없을 경우<BR>+QIRD: 0<br><br>OK<br><br>연결 상태가 아닌 경우<br>ERROR| (+QIURC: "recv",0 출력 시) AT+QIRD=0<br><br>+QIRD: 10<br>helloworld<br><br>OK |
 
