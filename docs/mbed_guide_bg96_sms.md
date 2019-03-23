@@ -1,4 +1,4 @@
-# MBED 기반의 Cat.M1 SMS 
+# MBED 기반의 Cat.M1 SMS 활용하기
 
 ## 목차
 
