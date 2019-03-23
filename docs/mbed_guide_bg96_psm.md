@@ -49,8 +49,13 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 ### 1. PSM 설정
 
-PSM을 사용하기 위해 **AT+CPSMS** 명령어를 사용하며, 파라미터 설정을 통해 Active/Sleep 주기를 조절할 수 있습니다.
-해당 명령의(Requested_Periodic-TAU)와 (Requested_Active-Time)의 시간을 설정함으로써 Active/Sleep 주기를 조절합니다. 주기의 단위를 설정하기 위해 6-8bits를 설정하며 값을 설정하기 위해 1-5bits값을 설정합니다. 예를 들어 (Requested_Periodic-TAU)를 1010011로 설정하였다면, 6-8bits가 101이므로 단위는 1분이며 1-2bit자리만 설정되었으므로 값은 6이고, 따라서 6분으로 설정한 것입니다.
+SM을 사용하기 위해 **AT+CPSMS** 명령어를 사용하며, 파라미터 설정을 통해 Active/Sleep 주기를 조절할 수 있습니다.
+해당 명령의(Requested_Periodic-TAU)와 (Requested_Active-Time)의 시간을 설정함으로써 Active/Sleep 주기를 조절합니다. 
+
+주기의 단위를 설정하기 위해 2초 / 30초 / 1분 / 10분 / 1시간 / 24시간 등을 6-8bits에서 설정하며 시간 값을 1-5bits에 설정합니다. 
+
+예를 들어 (Requested_Periodic-TAU)를 1010011로 설정하였다면, 6-8bits가 101이므로 단위는 1분이며 1-2bit자리만 설정되었으므로 값은 6이고, 따라서 6분으로 설정한 것입니다.
+
 
 **AT Command:** AT+CPSMS
 
