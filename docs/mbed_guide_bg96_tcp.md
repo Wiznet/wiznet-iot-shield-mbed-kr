@@ -409,7 +409,7 @@ TCP server에서 Cat.M1 모듈이 전송한 메시지를 확인할 수 있습니
 
 ![][5]
 
-<a name="#ReadMore"></a>
+<a name="ReadMore"></a>
 ## 더 보기
 * [MBED 기반의 Cat.M1 HTTP 활용 가이드][mbed-guide-bg96-http]
 * [MBED 기반의 Cat.M1 MQTT 활용 가이드][mbed-guide-bg96-mqtt]
