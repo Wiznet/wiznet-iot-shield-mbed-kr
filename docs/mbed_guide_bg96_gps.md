@@ -28,7 +28,7 @@
 
 > * 별도의 GNSS Antenna가 필요합니다.
 
-<a name="#Step-1-Overview"></a>
+<a name="Step-1-Overview"></a>
 ## 소개
 
 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 GPS 활용 방법에 대한 가이드를 제공합니다.
@@ -41,7 +41,7 @@ Cat.M1 모듈의 GPS기능을 활용하면 아이나 반려동물, 귀중품의 
 
 Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하는 AT 명령어로 제어하는 것이 일반적입니다. GPS 정보의 획득 기능도 AT 명령어를 이용하여 활성화 할 수 있습니다.
 
-<a name="#Step-2-ATCommand"></a>
+<a name="Step-2-ATCommand"></a>
 ## AT 명령어
 
 > AT 명령어에 대한 좀 더 상세한 설명은 Quectel AT Command Manual에서 확인 하실 수 있습니다.
@@ -131,7 +131,7 @@ GPS 위치 정보를 출력합니다.
 
 
 
-<a name="#Step-3-SampleCode"></a>
+<a name="Step-3-SampleCode"></a>
 ## 동작 구조 예제
 
 WIZnet IoT Shield를 Standalone 모드로 동작시켜, 터미널 프로그램으로 직접 AT 명령어를 입력해 보면서 동작 순서를 확인합니다.
@@ -151,7 +151,7 @@ WIZnet IoT Shield를 Standalone 모드로 동작시켜, 터미널 프로그램�
 ![][usbport]
 
 
-<a name="#Step-4-Build-and-Run"></a>
+<a name="Step-4-Build-and-Run"></a>
 ## 예제 코드 빌드 및 실행
 
 ### 1. Import project
@@ -246,7 +246,7 @@ GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에
 ![][4]
 
 
-<a name="#ReadMore"></a>
+<a name="ReadMore"></a>
 ## 더 보기
 * [MBED 기반의 Cat.M1 TCP/IP 데이터 통신][mbed-guide-bg96-http]
 * [MBED 기반의 Cat.M1 HTTP 활용 가이드][mbed-guide-bg96-http]
