@@ -351,7 +351,9 @@ int8_t deleteAllSMS_BG96(int delflag);
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-http-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf
 
-
+[import1]: ./imgs/mbed_guide_webide_import.png
+[import2]: ./imgs/mbed_guide_webide_import_repo.png
+[compile]: ./imgs/mbed_guide_webide_compile.png
 [1]: ./imgs/mbed_guide_bg96_sms-1.png
 [2]: ./imgs/mbed_guide_bg96_sms-2.png
 [3]: ./imgs/mbed_guide_bg96_sms-3.png
