@@ -25,6 +25,8 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 
 ## Key features and Roadmap
 
+:heavy_check_mark: 활용 가능  :heavy_multiplication_x: 지원 예정이며, 준비 중  :heavy_minus_sign: 지원 예정 없음
+
 ### Common Docs
 |        Title       |         Doc        |                            Description                           |
 |:------------------:|:------------------:|:----------------------------------------------------------------:|
@@ -33,7 +35,6 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 | [SKT Thingplug Guide](https://github.com/Wiznet/wiznet-iot-shield-kr/blob/master/docs/thingplug_guide_common.md) | :heavy_check_mark: | Cat.M1 장치의 SKT Thingplug 연동 가이드 (공통)  |
 
 ### Arm MBED Cat.M1 Samples and Docs
-:heavy_check_mark: 활용 가능  :heavy_multiplication_x: 지원 예정이며, 준비 중  :heavy_minus_sign: 지원 예정 없음
 
 > * [QC] WIoT-QC01 예제 코드
 > * [WM] WIoT-WM01 예제 코드
