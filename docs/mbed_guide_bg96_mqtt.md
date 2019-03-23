@@ -64,7 +64,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QMTOPEN=? | +QMTOPEN: (0-5),"host_name",(1-65536)<br><br>OK | - |
 | Read | AT+QMTOPEN? | +QMTOPEN: (tcpconnectID),"(host_name)",(port)<br>OK | AT+QMTOPEN?<br>+QMTOPEN: 0,"broker.hivemq.com",1883<br>OK |
@@ -83,7 +83,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QMTCONN=? | +QMTCONN: (list of supported (tcpconnectID)s),"(clientID)"[,"(username)"[,"(password)"]] | - |
 | Read | AT+QMTCONN? | [+QMTCONN: (tcpconnectID),(state)]<br>OK | - |
@@ -108,7 +108,7 @@ AT+QMTPUB 명령은 MQTT Broker에게 데이터를 전송할 때 사용됩니다
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QMTPUB=? | +QMTPUB: (0-5), (msgid),(0-2),(0,1),"topic",(1-1548)<br>OK | -|
 | Write | AT+QMTPUB=(tcpconnectID),(msgID),(qos),(retain),"(topic)"<br> 명령어 이후에 전송할 메시지 입력이 끝나면 Ctrl + Z를 입력합니다.| OK<br>+QMTPUB: (tcpconnectID),(msgID),(result),(value)<br>+CME ERROR: (err) | AT+QMTPUB=0,0,0,0,"topic/openhouse-B"<br> > Hello IoT Open House<br>OK |
@@ -140,7 +140,7 @@ AT+QMTSUB 명령은 MQTT Broker에게 원하는 토픽의 데이터를 받고자
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QMTSUB=? | AT+QMTSUB=?<br>+QMTSUB: (0-5), <msgid>,list of ["topic",qos]<br>OK| -|
 | Write | AT+QMTSUB=(tcpconnectID),(msgID),(topic1),(qos1)... | OK<br>+QMTSUB: (tcpconnectID),(msgID),(result),(value)<br>+CME ERROR: (err) | AT+QMTSUB=0,1,"topic/openhouse-A",2<br>OK<br>+QMTSUB: 0,1,0,2 |
@@ -163,7 +163,7 @@ AT+QMTDISC 명령은 MQTT Broker와의 연결을 해제할 때 사용합니다.
 
 **Syntax:**
 
-| Type | Syntax | Respones | Example
+| Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT+QMTDISC=? |+QMTDISC: (list of supported <tcpconnectID>s)<br>OK| -|
 | Write |AT+QMTDISC=(tcpconnectID)| OK<br>+QMTDISC: (tcpconnectID),(result)<br>+CME ERROR: (err) | AT+QMTDISC=0<br>OK<br>+QMTDISC: 0,0 |
