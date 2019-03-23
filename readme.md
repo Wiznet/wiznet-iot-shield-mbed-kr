@@ -7,10 +7,6 @@
 
 ![][hw-stack-nucleo]
 
-## Documentation
-개발 시작 가이드 및 응용 가이드 문서는 본 저장소의 **[Wiki](https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/wiki/)** 에서 확인 할 수 있습니다.
-
-
 ## Folder Structure
 
 ### /docs
@@ -54,6 +50,11 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 | ThingPlug 활용 | :heavy_check_mark: | :heavy_check_mark: | :heavy_multiplication_x: | :heavy_multiplication_x: | SKT의 클라우드 서비스 ThingPlug 연동 예제와 Widget 활용 가이드 |
 | AWS 연동하기       | :heavy_check_mark: | :heavy_multiplication_x: |    :heavy_minus_sign:    |    :heavy_minus_sign:    | 대표적인 글로벌 클라우드 서비스인 Amazon AWS 연동 예제           |
 | Azure 연동하기     | :heavy_multiplication_x: | :heavy_multiplication_x: |    :heavy_minus_sign:    |    :heavy_minus_sign:    | 대표적인 글로벌 클라우드 서비스인 MS Azure 연동 예제             |
+
+
+## Documentation
+개발 시작 가이드 및 응용 가이드 문서는 본 저장소의 **[Wiki](https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/wiki/)** 에서 확인 할 수 있습니다.
+
 
 ## Other WIZnet IoT Shield Repository
 **[wiznet-iot-shield](https://github.com/Wiznet/wiznet-iot-shield-kr/)** 저장소를 방문하면 다른 플랫폼 보드를 기반으로 동작하는 다양한 예제에 대한 저장소 리스트를 확인 할 수 있습니다.
