@@ -35,9 +35,10 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 1. 네트워크 인터페이스 활성화
 2. MQTT 접속 
-3. MQTT 데이터 Publish 
-4. MQTT 데이터 Subscribe 
-5. MQTT 접속 해제 
+3. MQTT Topic Subscribe  
+4. MQTT Subscribed Topic의 데이터 수신
+5. MQTT 데이터 Publish
+6. MQTT 접속 해제 
 
 이번 MQTT 테스트에서는 MQTT Broker로 HiveMQ를 사용하였습니다. HiveMQ의 Public MQTT Broker와 Websocker Client를 통하여 Cat M1 모듈의 Pub/Sub 데이터 송수신을 비교, 확인하실 수 있습니다.
 ### [HiveMQ](https://www.hivemq.com)
