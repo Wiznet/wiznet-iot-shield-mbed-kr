@@ -122,7 +122,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 | (RI) | - | Rank Indicator |
 | (CQI) | - | Channel Quality Indicator |
 
-### 3. PDP Context 활성화
+### 4. PDP Context 활성화
 > PDP(Packet Data Protocol)란 단말과 외부 패킷 데이터 네트워크 사이의 데이터 송수신을 위한 연결을 제공하기 위해 사용하는 네트워크 프로토콜을 뜻하며, PDP Context는 이러한 연결 과정에서 사용되는 정보의 집합을 의미합니다.
 
 **AT Command:** AT+QIACT
@@ -144,7 +144,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 | (context_type) | Integer | Protocol 타입<br>1 : IPv4<br>2 : IPv6 |
 | (IP_address) | String | Context가 활성화되어 부여된 Local IP 주소 |
 
-### 3. PDP Context 비활성화
+### 5. PDP Context 비활성화
 
 **AT Command:** AT+QIDEACT
 
@@ -162,7 +162,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 | (contextID) | Integer | Context ID (범위: 1-16) |
 
 
-### 5. 소켓 열기
+### 6. 소켓 열기
 
 소켓 서비스를 오픈하는 명령어 입니다.
 > 전송 프로토콜 타입(TCP or UDP) 및 목적지 IP 주소와 포트번호를 포함하며, TCP의 경우 소켓 오픈 및 연결(connect) 시도가 수행됩니다. (buffer access 모드와 direct push 모드는 연결 성공 시 +QIOPEN: 0,0 출력, transparent access 모드의 경우는 CONNECT 출력)
@@ -189,7 +189,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 | (access_mode) | Integer | 소켓 서비스의 data access 모드<br>0: Buffer access mode<br>1: Direct push mode<br>2: Transparent access mode |
 | (err) | Integer | 에러 코드<br>상세 내용은 [BG96_AT_Commands_Manual: Chapter 4][link-bg96-atcommand-manual] 참조 |
 
-### 6. 소켓 종료
+### 7. 소켓 종료
 
 지정된 소켓 서비스를 종료하는 명령어 입니다.
 
@@ -208,7 +208,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 | (connectID) | Integer | 소켓 서비스 인덱스 (범위: 0-11) |
 | (timeout) | Integer | 지정된 (timeout) 시간 안에 FIN ACK가 수신되지 않으면 모듈은 강제로 소켓을 Close함 <br>(범위: 1-65535) (초기값: 10) (단위: second) |
 
-### 7. 소켓 데이터 전송
+### 8. 소켓 데이터 전송
 
 지정된 소켓으로 데이터를 전송하는 명령어 입니다.
 > "TCP" 모드 외의 (service_type)에 대한 명령어는 [BG96_TCP/IP_AT_Commands_Manual][link-bg96-tcp-manual]을 참고하시기 바랍니다.
@@ -230,7 +230,7 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 
 
 
-### 8. 소켓 데이터 수신
+### 9. 소켓 데이터 수신
 
 지정된 소켓의 버퍼로 데이터가 수신 될 경우, 모듈은 `+QIURC: "recv",<connectID>` 명령을 출력하며, 이 때 AT+QIRD 명령을 이용하면 수신 데이터를 확인할 수 있습니다.
 
