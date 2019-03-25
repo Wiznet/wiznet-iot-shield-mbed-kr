@@ -249,7 +249,7 @@ MBED 온라인 컴파일러에 Log in 하여 상단 메뉴의 `Import`를 클릭
 
 ### 2. Modify parameters
 
-만약 다른 서비스의 API 테스트를 위해 URL을 변경하려는 경우, 다음 변수를의 내용을 변경하면 됩니다.
+만약 다른 서비스의 API 테스트를 위해 URL을 변경하려는 경우, 다음 변수의 내용을 변경하면 됩니다.
 
 ````cpp
 // Sample HTTP URL: Weather info by Korea Meteorological Administration
