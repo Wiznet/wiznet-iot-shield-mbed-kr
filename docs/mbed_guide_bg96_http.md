@@ -249,18 +249,11 @@ MBED 온라인 컴파일러에 Log in 하여 상단 메뉴의 `Import`를 클릭
 
 ### 2. Modify parameters
 
-만약 HiveMQ 이외의 다른 MQTT broker와 테스트해 보려는 경우, 다음 define 및 변수들을 변경 할 수 있습니다.
+만약 다른 서비스의 API 테스트를 위해 URL을 변경하려는 경우, 다음 변수를의 내용을 변경하면 됩니다.
 
 ````cpp
-#define MQTT_CLIENTID               "clientExample"
-#define MQTT_USERID                 "testid"
-#define MQTT_PASSWORD               "testpassword"
-#define MQTT_SAMPLE_TOPIC_A         "topic/openhouse-A"
-#define MQTT_SAMPLE_TOPIC_B         "topic/openhouse-B"
-#define MQTT_SAMPLE_TOPIC_C         "topic/openhouse-C"
-...
-char mqtt_broker_url[] = "broker.hivemq.com";
-int mqtt_broker_port = 1883;
+// Sample HTTP URL: Weather info by Korea Meteorological Administration
+char request_url[] = "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4113552000";
 ````
 
 ### 3. Compile
