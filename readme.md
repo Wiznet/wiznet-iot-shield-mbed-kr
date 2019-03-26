@@ -62,10 +62,10 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 
 ## Support
 
-[![WIZnet Developer Forum][forum]](https://forum.wiznet.io/)
-
 **[WIZnet Developer Forum](https://forum.wiznet.io/)** 에서 전세계의 WIZnet 기술 전문가들에게 질문하고 의견을 전달할 수 있습니다.
 지금 방문하세요.
+
+[![WIZnet Developer Forum][forum]](https://forum.wiznet.io/)
 
 ## License
 **WIZnet IoT Shield for Arm MBED** 저장소의 모든 문서와 예제는 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)으로 배포됩니다.
