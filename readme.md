@@ -47,9 +47,15 @@ Arm MBED 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 | GPS 활용하기       | :heavy_check_mark: | :heavy_check_mark: |    :heavy_multiplication_x:    |    :heavy_multiplication_x:    | Cat.M1 모듈에 내장된 GPS 위치 측위 예제                          |
 | SMS 활용하기       | :heavy_check_mark: | :heavy_check_mark: |    :heavy_multiplication_x:    | :heavy_multiplication_x: | Cat.M1 모듈에서 지원하는 SMS(단문 메시지 서비스)의 활용 예제     |
 | PSM 저전력 모드    | :heavy_check_mark: | :heavy_check_mark: |    :heavy_multiplication_x:    | :heavy_multiplication_x: | Cat.M1 모듈에서 지원하는 저전력 모드(PSM) 활용 예제              |
-| ThingPlug 활용 | :heavy_check_mark: | :heavy_check_mark: | :heavy_multiplication_x: | :heavy_multiplication_x: | SKT의 클라우드 서비스 ThingPlug 연동 예제와 Widget 활용 가이드 |
-| AWS 연동하기       | :heavy_check_mark: | :heavy_multiplication_x: |    :heavy_minus_sign:    |    :heavy_minus_sign:    | 대표적인 글로벌 클라우드 서비스인 Amazon AWS 연동 예제           |
+| ThingPlug 활용 | :heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign:  | :heavy_minus_sign:  | SKT의 클라우드 서비스 ThingPlug 연동 예제와 Widget 활용 가이드 |
+| AWS 연동하기       | :heavy_check_mark: | :heavy_check_mark: |    :heavy_minus_sign:    |    :heavy_minus_sign:    | 대표적인 글로벌 클라우드 서비스인 Amazon AWS 연동 예제           |
 | Azure 연동하기     | :heavy_multiplication_x: | :heavy_multiplication_x: |    :heavy_minus_sign:    |    :heavy_minus_sign:    | 대표적인 글로벌 클라우드 서비스인 MS Azure 연동 예제             |
+
+### Other MBED Samples
+|        Title       |     Code      |                            Description                           |
+|:------------------:|:------------------:|:----------------------------------------------------------------|
+| [WIoT-Shield_SENSOR_CDS](https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/tree/master/samples/WIoT-Shield/WIZnet-IoTShield-SENSOR_CDS) | :heavy_check_mark: | IoT Shield에 탑재된 CDS(조도센서) 활용 예제 (Pin: A0) |
+| [WIoT-Shield_SENSOR_TEMP](https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/tree/master/samples/WIoT-Shield/WIZnet-IoTShield-SENSOR_TEMP) | :heavy_check_mark: | IoT Shield에 탑재된 [LM35](http://www.ti.com/lit/ds/symlink/lm35.pdf)(온도센서) 활용 예제 (Pin: A1) |
 
 
 ## Documentation
