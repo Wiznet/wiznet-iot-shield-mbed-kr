@@ -10,7 +10,7 @@
 <a name="Prerequisites"></a>
 ## 시작하기 전에
 
-> 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 **[ThingPlug][link-thingplug-portal]**에 연결하고 데이터를 송신하는 방법에 대한 가이드를 제공합니다.
+> 본 문서에서는 Arm MBED 기반 개발 환경에서 WIZnet IoT shield와 ST Nucleo-L476RG 보드를 이용하여 Cat.M1 단말의 **[ThingPlug][link-thingplug-portal]** 에 연결하고 데이터를 송신하는 방법에 대한 가이드를 제공합니다.
 > 
 > Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
 > 
@@ -45,18 +45,18 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 ```
 AT+SKTPCON
-status: disconnected								// 초기 상태 disconnected
+status: disconnected   // 초기 상태 disconnected
 
 OK
 AT+SKTPCON=1,"MQTT","test.sktiot.com",1883,120,1,"simple_v1","a0149f60b*********","svc01","dev02"
 OK
 
-+SKTPCON: 0											// 접속에 성공하면  +SKTPCON: 0 수신
++SKTPCON: 0            // 접속에 성공하면  +SKTPCON: 0 수신
 AT+SKTPCON
-status: connected									// 접속 상태가 connected로 변경됨
+status: connected      // 접속 상태가 connected로 변경됨
 
 OK
-AT+SKTP												// 연결 정보 확인
+AT+SKTP                // 연결 정보 확인
 version: 1.0.0
 status: connected
 protocol: MQTT
@@ -78,12 +78,12 @@ OK
 ## 동작 구조 예제 (Cat.M1 ThingPlug 데이터 전송)
 
 ```
-AT+SKTPDAT=1,"telemetry",0							// 데이터 타입 telemetry로 전송시
-> {"temperature":12, "humidity":34}				   	// '>' 프롬프트 이후에 데이터 입력, 입력 완료는 Ctrl+Z
+AT+SKTPDAT=1,"telemetry",0          // 데이터 타입 telemetry로 전송시
+> {"temperature":12, "humidity":34} // '>' 프롬프트 이후에 데이터 입력, 입력 완료는 Ctrl+Z
 OK
 
-AT+SKTPDAT=1,"attribute",0							// 데이터 타입 attribute로 전송시
-> {"LED":"ON"}										// '>' 프롬프트 이후에 데이터 입력, 입력 완료는 Ctrl+Z
+AT+SKTPDAT=1,"attribute",0          // 데이터 타입 attribute로 전송시
+> {"LED":"ON"}                      // '>' 프롬프트 이후에 데이터 입력, 입력 완료는 Ctrl+Z
 OK
 
 ```
@@ -93,8 +93,8 @@ OK
 
 ```
 
-+SKTPCMD: tp_user,1815296803,1,[20,14]				// RPC 수신
-AT+SKTPRES=1,"tp_user",1815296803,0					// PRC에 대한 처리 결과 응답
++SKTPCMD: tp_user,1815296803,1,[20,14]  // RPC 수신
+AT+SKTPRES=1,"tp_user",1815296803,0     // PRC에 대한 처리 결과 응답
 > {"result":"success"}
 OK
 
@@ -186,9 +186,11 @@ int8_t sendThingPlugResp_BG96(char* cmd_type, unsigned int rpc_id, int result, c
 #### 4.2 Demo
 
 * 접속 후 telemetry 1회 전송
+
 ![][3]
 
 * 제어명령 RPC 수신 후 결과 전송
+
 ![][4]
 
 
@@ -203,7 +205,6 @@ int8_t sendThingPlugResp_BG96(char* cmd_type, unsigned int rpc_id, int result, c
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 [1]: ./imgs/thingplug_main.png
-[2]:
 [3]: ./imgs/thingplug_mbed_data_send.png
 [4]: ./imgs/thingplug_mbed_cmd_result.png
 
