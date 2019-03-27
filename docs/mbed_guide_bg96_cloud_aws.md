@@ -7,14 +7,13 @@
 -   [AT 명령어](#Step-2-ATCommand)
 -   [동작 구조 예제](#Step-3-SampleCode)
 -   [예제 코드 빌드 및 실행](#Step-4-Build-and-Run)
--   [더 보기](#ReadMore)
 
 <a name="Prerequisites"></a>
 ## 시작하기 전에
 
 > * 하드웨어 설정과 개발환경 구축은 **[MBED 기반으로 Cat.M1 디바이스 개발 시작하기][mbed-getting-started]** 문서에 상세히 설명되어 있습니다.
 
-> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]**를 기준으로 작성되었습니다.
+> * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
 
 > * MQTT 등 공통 AT Command에 대한 세부적인 설명은 생략하였습니다. 자세한 설명은 Cat M1 모듈 매뉴얼을 참고하시기 바랍니다.
 >   * [MBED 기반의 Cat.M1 MQTT 데이터 통신 가이드][mbed-guide-bg96-mqtt]
@@ -32,6 +31,7 @@
 <a name="Step-1-Overview"></a>
 ## 소개
 AWS IoT란 무엇입니까?
+
 > AWS IoT은(는) 인터넷 연결 제품(센서, 액추에이터, 내장형 마이크로 컨트롤러, 스마트 애플리케이션 등)과 AWS 클라우드 간에 안전한 양방향 통신을 제공합니다. 이를 통해 여러 디바이스에서 원격 측정 데이터를 수집하고 해당 데이터를 저장 및 분석할 수 있습니다. 또한 사용자가 휴대전화 또는 태블릿에서 이러한 디바이스를 제어할 수 있게 해주는 애플리케이션을 만들 수도 있습니다.
 > 출처 : [AWS IoT란 무엇입니까?](https://docs.aws.amazon.com/ko_kr/iot/latest/developerguide/what-is-aws-iot.html)
 
@@ -42,6 +42,7 @@ AWS IoT란 무엇입니까?
 먼저, AWS IoT 서비스 상에서 사물을 생성하고, 그에 수반되는 인증서를 생성하고, 보안 정책을 설정하는 등 AWS 서비스 상에서 선행되는 사전 작업에 대한 간단한 가이드를 설명하고 있습니다. 그리고, Cat M1 모듈에서 AT Command를 통하여, AWS IoT에 접속하고 데이터를 주고 받는 간단한 예제를 설명하고 있습니다.
 
 AWS IoT에 대한 자세한 설명은 AWS IoT 개발자 안내서를 참고하시기 바랍니다.
+
 > AWS 개발자 안내서: [AWS IoT 시작하기](https://docs.aws.amazon.com/ko_kr/iot/latest/developerguide/iot-gs.html)
 
 
@@ -152,6 +153,7 @@ MQTT에 대한 AT 명령어 사용 설명은 아래 링크에서 확인 하실 �
 ### 1. AWS - 사물 생성하기
 AWS IoT 계정에 등록된 디바이스는 레지스트리를 통해 AWS IoT 계정에 등록됩니다.
 만약 AWS IoT를 처음 사용하는 사용자라면, 아래와 같은 화면을 보실 수 있는데, 여기에서 [사물 등록]을 시작하시면 됩니다.
+
 ![][1]
 
 그리고, AWS IoT 사물 생성 페이지에서 [단일 사물 생성]을 선택합니다.
@@ -167,13 +169,14 @@ AWS IoT 계정에 등록된 디바이스는 레지스트리를 통해 AWS IoT �
 AWS IoT는 디바이스와의 통신에서 X.509 인증서를 사용합니다.
 AWS IoT는 사용자를 위해 인증서를 생성할 수도 있고 사용자가 자체 X.509 인증서를 사용할 수도 있습니다. 
 이번 가이드에서는 AWS IoT가 생성하는 인증서를 사용하도록 하겠습니다. 인증서는 사용 전에 활성화해야 합니다.
+
 아래 화면에서는 사물에 인증서를 추가하는 과정입니다. [인증서 생성]을 선택하면 사물 인증에 사용하는 인증서, 퍼블릭 키, 프라이빗 키가 생성됩니다.
 
 ![][4]
 
 이제, 인증서가 생성되었습니다.
-아래 화면에서, 사물에 대한 인증서, 프라이빗 키, 루트 CA를 PC에 다운로드하시기 바랍니다.
 
+아래 화면에서, 사물에 대한 인증서, 프라이빗 키, 루트 CA를 PC에 다운로드하시기 바랍니다.
 여기에서 다운로드 한 파일들은 이후 Cat M1 모듈이 AWS IoT 서버에 접속될 때, 사용될 예정입니다.
 
 ![][5]
@@ -227,22 +230,28 @@ AWS 클라우드에서 디바이스의 영구적 표현을 위해서, 디바이�
 ```
 // Cat M1 모듈의 모든 파일 리스트 지우기
 AT+QFDEL="*"
+
 OK
+
 // Cat M1 모듈의 파일 리스트 확인하기
 AT+QFLST
+
 OK
+
 // 루트 CA 인증서를 Cat M1 모듈 파일에 업로드
 AT+QFUPL="AmazonRootCA1.pem",1188,100
 CONNECT
 +QFUPL: 1188,2d13
 
 OK
+
 // 사물에 대한 인증서를 Cat M1 모듈 파일에 업로드
 AT+QFUPL="815c124058-certificate.pem.crt",1220,100
 CONNECT
 +QFUPL: 1220,7317
 
 OK
+
 // 프라이빗 키를 Cat M1 모듈 파일에 업로드
 AT+QFUPL="815c124058-private.pem.key",1675,100
 CONNECT
@@ -261,26 +270,32 @@ OK
 ```
 // SSL : 루트 CA 인증서 경로 설정
 AT+QSSLCFG="cacert",2,"AmazonRootCA1.pem"
+
 OK
 
 // SSL : 클라이언트 인증서 경로 설정
 AT+QSSLCFG="clientcert",2,"815c124058-certificate.pem.crt"
+
 OK
 
 // SSL : 클라이언트 프라이빗 키  경로 설정
 AT+QSSLCFG="clientkey",2,"815c124058-private.pem.key"
+
 OK
 
 // Manage server and client authentication if requested by the remote server
 AT+QSSLCFG="seclevel",2,2
+
 OK
 
 // TLS 1.1
 AT+QSSLCFG="sslversion",2,4
+
 OK
 
 // Ciphersuite : TLS_RSA_WITH_AES_256_CBC_SHA
 AT+QSSLCFG="ciphersuite",1,0x0035
+
 OK
 
 // Ignore validity check for certification
@@ -291,16 +306,19 @@ OK
 
 // MQTT 접속을 SSL로 설정
 AT+QMTCFG="SSL",0,1,2
+
 OK
 
 // 엔드 포인트 주소 설정
 AT+QMTOPEN=0,"a3uz5t2azg1xdz-ats.iot.ap-northeast-2.amazonaws.com",8883
+
 OK
 
 +QMTOPEN: 0,0
 
 // AWS IoT에 접속
 AT+QMTCONN=0,"WIZnet_IoTShield_CatM1"
+
 OK
 
 +QMTCONN: 0,0,0
@@ -345,6 +363,7 @@ OK
 // AWS IoT에 데이터 Publish하기
 AT+QMTPUB=0,1,1,0,"$aws/things/WIZnet_IoTShield_CatM1/shadow/update"
 > {"state":{"reported":{"Temp":"29","Color":"Red"}}}
+
 OK
 
 +QMTPUB: 0,1,0
@@ -362,6 +381,7 @@ AWS IoT에서 디바이스에게 데이터를 전송하는 과정을 테스트 �
 ```
 // AWS IoT로부터 데이터 Subscribe하기
 AT+QMTSUB=0,1,"$aws/things/WIZnet_IoTShield_CatM1/shadow/update/accepted",1
+
 OK
 
 +QMTSUB: 0,1,0,1
@@ -377,7 +397,9 @@ OK
 
 +QMTRECV: 0,1,"$aws/things/WIZnet_IoTShield_CatM1/shadow/update/accepted","{"state":{"reported":{"Temp":"29","Color":"Red"},"desired":{"Color":"White"}},"metadata":{"reported":{"Temp":{"timestamp":1553325144},"Color":{"timestamp":1553325144}},"desired":{"Color":{"timestamp":1553325144}}},"version":5,"timestamp":1553325144}"
 ```
+
 이 데이터를 가독성 있게 정렬하면 아래와 같습니다. 즉, AWS IoT 섀도우 화면에서 수정한 내용이 그대로 적용되는 것을 확인하실 수 있습니다.
+
 ```
 { 
   "state":{
@@ -395,6 +417,7 @@ OK
 ### 8. 디바이스 - AWS IoT 접속 해제하기
 
 만약 AWS IoT와 연결을 해제하려고 한다면, AT+QMTDISC 명령어를 사용하면 됩니다.
+
 ```
 AT+QMTDISC=0
 OK
@@ -408,9 +431,11 @@ OK
 
 ```
 AT+QFDEL="*"
+
 OK
 
 AT+QFLST
+
 OK
 
 AT+QFUPL="AmazonRootCA1.pem",1188,100
@@ -432,21 +457,27 @@ CONNECT
 OK
 
 AT+QSSLCFG="cacert",2,"AmazonRootCA1.pem"
+
 OK
 
 AT+QSSLCFG="clientcert",2,"815c124058-certificate.pem.crt"
+
 OK
 
 AT+QSSLCFG="clientkey",2,"815c124058-private.pem.key"
+
 OK
 
 AT+QSSLCFG="seclevel",2,2
+
 OK
 
 AT+QSSLCFG="sslversion",2,4
+
 OK
 
 AT+QSSLCFG="ciphersuite",1,0x0035
+
 OK
 
 AT+QSSLCFG="ignorelocaltime",1
@@ -455,25 +486,30 @@ AT+QSSLCFG="ignorelocaltime",1
 OK
 
 AT+QMTCFG="SSL",0,1,2
+
 OK
 
 AT+QMTOPEN=0,"a3uz5t2azg1xdz-ats.iot.ap-northeast-2.amazonaws.com",8883
+
 OK
 
 +QMTOPEN: 0,0
 
 AT+QMTCONN=0,"WIZnet_IoTShield_CatM1"
+
 OK
 
 +QMTCONN: 0,0,0
 
 AT+QMTPUB=0,1,1,0,"$aws/things/WIZnet_IoTShield_CatM1/shadow/update"
 > {"state":{"reported":{"Temp":"29","Color":"Red"}}}
+
 OK
 
 +QMTPUB: 0,1,0
 
 AT+QMTSUB=0,1,"$aws/things/WIZnet_IoTShield_CatM1/shadow/update/accepted",1
+
 OK
 
 +QMTSUB: 0,1,0,1
@@ -481,6 +517,7 @@ OK
 +QMTRECV: 0,1,"$aws/things/WIZnet_IoTShield_CatM1/shadow/update/accepted","{"state":{"reported":{"Temp":"29","Color":"Red"},"desired":{"Color":"White"}},"metadata":{"reported":{"Temp":{"timestamp":1553325144},"Color":{"timestamp":1553325144}},"desired":{"Color":{"timestamp":1553325144}}},"version":5,"timestamp":1553325144}"
 
 AT+QMTDISC=0
+
 OK
 
 +QMTDISC: 0,0
@@ -501,7 +538,7 @@ MBED 온라인 컴파일러에 Log in 하여 상단 메뉴의 `Import`를 클릭
 
 | Sample code | Link |
 |:--------|:--------|
-| WIZnet-IoTShield-BG96-AWS | https://os.mbed.com/users/hkjung/code/WIZnet-IoTShield-BG96-AWS/ |
+| WIZnet-IoTShield-BG96-Cloud-AWS | https://os.mbed.com/users/hkjung/code/WIZnet-IoTShield-BG96-Cloud-AWS/ |
 
 
 > `Import Programs` 팝업 창이 활성화 될 때, Import As 옵션이 Program으로 설정되어 있어야 합니다.
