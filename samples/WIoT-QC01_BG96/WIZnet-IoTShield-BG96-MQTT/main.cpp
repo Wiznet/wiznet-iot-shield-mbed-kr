@@ -617,12 +617,42 @@ int8_t checkRecvMqttMessage_BG96(char * topic, int * msgid, char * msg)
 {
     int8_t ret = RET_NOK;
     int id = 0;    
+    int idx = 0;
+    char * search_pt;
+    bool done = false;
+    bool received = false;    
+    Timer t;
+    
+    _parser->set_timeout(1);
+    received = _parser->recv("+QMTRECV: %d,%d,\"%[^\"]\",", &id, msgid, topic);    
+    _parser->set_timeout(BG96_DEFAULT_TIMEOUT);
+     
+    if(received) {
+        idx = 0;
+        t.start();
+        do {        
+            _parser->read(&msg[idx++], 1);        
+            search_pt = strstr(msg, "\r\n");
+            if (search_pt != 0) {
+                done = true; // break;
+                ret = RET_OK;
+            }
+        } while(!done && (t.read_ms() < BG96_DEFAULT_TIMEOUT));                
+        t.stop();
+    }
+    return ret;
+    
+    /*
+    // Simple ver.    
+    int8_t ret = RET_NOK;
+    int id = 0;    
     bool received = false;
     
     _parser->set_timeout(1);
     received = _parser->recv("+QMTRECV: %d,%d,\"%[^\"]\",\"%[^\"]\"", &id, msgid, topic, msg);    
-    _parser->set_timeout(BG96_DEFAULT_TIMEOUT);
-     
-    if(received) ret = RET_OK;    
+    _parser->set_timeout(BG96_DEFAULT_TIMEOUT);     
+    
+    if(received) ret = RET_OK;
     return ret;
+    */    
 }
