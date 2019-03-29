@@ -261,6 +261,7 @@ GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-gnss-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_GNSS_AT_Commands_Manual_V1.1.pdf
 
+[mbed-getting-started]: ./mbed_get_started.md
 [mbed-guide-bg96-tcp]: ./mbed_guide_bg96_tcp.md
 [mbed-guide-bg96-http]: ./mbed_guide_bg96_http.md
 [mbed-guide-bg96-mqtt]: ./mbed_guide_bg96_mqtt.md
