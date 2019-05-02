@@ -205,8 +205,8 @@ int8_t sendThingPlugResp_BG96(char* cmd_type, unsigned int rpc_id, int result, c
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 [1]: ./imgs/thingplug_main.png
-[3]: ./imgs/thingplug_mbed_data_send.png
-[4]: ./imgs/thingplug_mbed_cmd_result.png
+[3]: ./imgs/thingplug_mbed_data_send.PNG
+[4]: ./imgs/thingplug_mbed_cmd_result.PNG
 
 [link-thingplug-atcommand-manual]: https://www.sktiot.com/api/common/file/download?fileId=00EYNW8OXF8VA94EE29A
 [link-thingplug-portal]: https://portal.sktiot.com/intro
