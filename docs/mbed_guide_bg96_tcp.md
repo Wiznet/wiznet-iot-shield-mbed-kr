@@ -252,7 +252,28 @@ MCU board로 Cat.M1 모듈을 제어하는 경우 해당 명령어를 사용합�
 | (read_actual_length) | Integer | 수신 데이터의 실제 길이 (byte) |
 | (data) | String | 수신한 데이터 |
 
+### 10. TCP/IP Context 파라메터 설정
 
+TCP/IP Context의 파라메터를 설정합니다.
+
+> 국내 SKT 망의 경우, Context type은 IPv6, APN은 lte-internet.sktelecom.com 으로 지정되어야 통신이 가능합니다.
+
+| Type | Syntax | Response | Example
+|:--------|:--------|:--------|:--------|
+| Test | AT+QISCGP=? | +QICSGP: <br>(1-16),(1,2),(APN),(username),(password),(0-3) | - |
+| Read | AT+QICSGP=(contextID) | +QICSGP: <br>(context_type),(APN),(username),(password),(authentication)<br><br>OK | AT+QICSGP=1<br><br>+QICSGP: 2,"lte-internet.sktelecom.com","","",0 |
+| Write | AT+QICSGP=(contextID)[(context_type),(APN)[,(username),(password)[,(authentication)]]] | OK<br><br>or<br><br>Error | AT+QICSGP=1,2,"lte-internet.sktelecom.com","","",0<br><br>OK |
+
+**Defined values:**
+
+| Parameter | Type | Description |
+|:--------|:--------|:--------|
+| (contextID) | Integer | Context ID (범위: 1-16) |
+| (context_type) | Integer | Protocol 타입<br>1 : IPv4<br>2 : IPv6 |
+| (APN) | String | Access point name |
+| (username) | String | Username |
+| (password) | String | Password |
+| (authentication) | Integer | 인증 방식<br>0 : NONE<br>1 : PAP<br>2 : CHAP<br>3 : PAP or CHAP |
 
 <a name="Step-3-SampleCode"></a>
 ## 동작 구조 예제
@@ -268,6 +289,9 @@ AT+CPIN?
 
 // 망 접속 확인 (SRV면 접속)
 AT+QCDS
+
+// APN과 IP 프로토콜 확인 (IPv6 only)
+AT+QICSGP=1
 
 // PDP context 활성화
 AT+QIACT=1
