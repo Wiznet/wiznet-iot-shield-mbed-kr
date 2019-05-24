@@ -88,6 +88,6 @@ Arm Mbed 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 
 
 [forum]: ./docs/imgs/forum.jpg
-[hw-stack-nucleo]: ./docs/imgs/hw/WIoT-Shield-QC01-Nucleo-L476RG.png
+[hw-stack-nucleo]: ./docs/imgs/hw/wiot-shield-qc01-nucleo-l476rg.png
 
 
