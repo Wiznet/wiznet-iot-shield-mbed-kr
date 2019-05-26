@@ -201,7 +201,7 @@ Add Board를 클릭하면 MBED 플랫폼 보드 리스트에서 활용할 보드
 [mbed-guide-bg96-http]: ./mbed_guide_bg96_http.md
 [mbed-guide-bg96-mqtt]: ./mbed_guide_bg96_mqtt.md
 
-[hw-stack-nucleo]: ./imgs/hw/WIoT-Shield-QC01-Nucleo-L476RG.png
+[hw-stack-nucleo]: ./imgs/hw/wiot-shield-qc01-nucleo-l476rg.png
 
 [hw-settings-nucleo-qc01]: ./imgs/hw/WIoT-QC01_JUMP_Arduino_serialD2_D8.png
 [hw-settings-nucleo-wm01]: ./imgs/hw/WIoT-WM01_JUMP_Arduino_serialD2_D8.png
