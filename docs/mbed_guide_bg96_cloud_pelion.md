@@ -150,7 +150,7 @@ int main(void) {
 
 추가적으로, 해당 프로젝트에 인증서를 적용하기 위해 `Pelion Device Management` - `Appily update Certificate` 를 클릭합니다. 만약 기존에 인증서가 없다면 `Create`버튼을 눌러 인증서를 생성하여 적용합니다.
 
-![][cert]
+![][cert1]
 
 
 ### 3. Compile
