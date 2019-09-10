@@ -130,6 +130,6 @@ ock.set_timeout(15000);
 [compile]: ./imgs/mbed_guide_webide_compile.png
 [1]: ./imgs/mbed_guide_bg96_cellular-1.png
 [2]: ./imgs/mbed_guide_bg96_cellular-2.png
-[3]: ./imgs/mbed_guide_bg96_cellular-3.png
+[3]: ./imgs/mbed_guide_bg96_cellular-3.PNG
 [4]: ./imgs/mbed_guide_bg96_cellular-4.png
 
