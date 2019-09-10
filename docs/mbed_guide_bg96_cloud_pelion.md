@@ -43,11 +43,10 @@ FRDM-K64F 외의 다른 디바이스 및 다른 무선 기술을 사용하신다
 
 이 가이드 문서는 아래와 같은 과정으로 구성되어 있습니다.
 
-1. Online Compiler에 FRDM-K64F 추가
-2. Online Compiler에 Mbed Pelion Platform 연동 예제 추가
-3. Mbed Pelion Platform 연동 예제에 인증서 설정
-4. Pelion Portal에 접속하여 데이터 확인
-
+1. Import Device & project
+2. Modify parameters
+3. Compile
+4. Demo
 
 
 <a name="Step-4-Build-and-Run"></a>
