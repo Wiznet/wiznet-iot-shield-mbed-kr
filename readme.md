@@ -57,7 +57,7 @@ Arm Mbed 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 
 |        Title       |     Code      |     Doc      |                   Description                    |
 |:------------------:|:-------------:|:------------:|:-------------------------------------------------|
-| [mbed-os-example-cellular](https://os.mbed.com/users/hkjung/code/mbed-os-example-cellular-BG96/) | :heavy_check_mark: | :heavy_multiplication_x: | Mbed-OS의 Cellular API 기반의 기본적인 데이터 송/수신 예제,<br>지정된 [Echo Server](echo.mbedcloudtesting.com)로 TCP or UDP 데이터를 보내고 응답 수신 |
+| [mbed-os-example-cellular](https://os.mbed.com/users/hkjung/code/mbed-os-example-cellular-BG96/) | :heavy_check_mark: | :heavy_check_mark: | Mbed-OS의 Cellular API 기반의 기본적인 데이터 송/수신 예제,<br>지정된 [Echo Server](echo.mbedcloudtesting.com)로 TCP or UDP 데이터를 보내고 응답 수신 |
 | [Pelion IoT Platform 연동](https://os.mbed.com/users/stkim92/code/BG96_K6xF_pelion-example-frdm_Temp/) | :heavy_check_mark: | :heavy_check_mark: | IoT 연결, 장치 및 데이터 관리 플랫폼인 Arm Pelion 연동 예제 | 
 
 
