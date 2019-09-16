@@ -41,7 +41,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 > 좀 더 상세한 AT 명령어 설명은 Quectel과 우리넷의 AT Command Manual에서 확인 하실 수 있습니다.
 > * [BG96_AT_Commands_Manual_V2.1][link-bg96-atcommand-manual]
-> * WM-N400MSE_AT_Commands_Manual
+> * [WM-N400MSE_AT_Commands_Guide_v1.1][link-wm-n400mse-atcommand-manual]
 
 ### 1. Cat M1 모듈의 일반적인 동작 설명은 생략
 
@@ -351,6 +351,7 @@ int8_t deleteAllSMS_BG96(int delflag);
 [link-nucleo-l476rg]: https://os.mbed.com/platforms/ST-Nucleo-L476RG/
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-http-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf
+[link-wm-n400mse-atcommand-manual]:./docs/datasheet/WM-N400MSE_AT_Commands_Guide_v1.1.pdf
 
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
