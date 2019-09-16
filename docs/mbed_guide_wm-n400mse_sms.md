@@ -245,7 +245,7 @@ int8_t deleteAllSMS_WM01(int delflag);
 
 ![][3]
 
-![][4]
+![][5]
 
 [mbed-getting-started]: ./mbed_get_started.md
 [skt-iot-portal]: https://www.sktiot.com/iot/developer/guide/guide/catM1/menu_05/page_01
@@ -260,3 +260,4 @@ int8_t deleteAllSMS_WM01(int delflag);
 [2]: ./imgs/mbed_guide_wm-n400mse_sms-2.png
 [3]: ./imgs/mbed_guide_wm-n400mse_sms-3.png
 [4]: ./imgs/mbed_guide_wm-n400mse_sms-4.png
+[5]: ./imgs/mbed_guide_wm-n400mse_sms-5.png
