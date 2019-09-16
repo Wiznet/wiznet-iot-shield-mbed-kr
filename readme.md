@@ -41,7 +41,7 @@ Arm Mbed 플랫폼의 Web IDE에서 확인 할 수 있는 예제 코드가 위�
 |        Title       |         Doc        |      QC     |      WM     |       AM      |                            Description                           |
 |:------------------:|:------------------:|:------------------:|:------------------------:|:------------------------:|:----------------------------------------------------------------|
 | 개발 시작 가이드   | :heavy_check_mark: | :heavy_minus_sign: |    :heavy_minus_sign:    |    :heavy_minus_sign:    | 초기 개발환경 구축                                               |
-| Ping 테스트        | :heavy_minus_sign: | :heavy_check_mark: |    :heavy_multiplication_x:    |    :heavy_multiplication_x:    | 네트워크 상의 지정된 목적지와 Ping 테스트 예제                   |
+| Ping 테스트        | :heavy_minus_sign: | :heavy_check_mark: |    :heavy_check_mark:    |    :heavy_multiplication_x:    | 네트워크 상의 지정된 목적지와 Ping 테스트 예제                   |
 | TCP/IP 구현하기 | :heavy_check_mark: | :heavy_check_mark: |    :heavy_multiplication_x:    |    :heavy_multiplication_x:    | TCP client로 동작하여 데이터 송신 및 수신하는 예제               |
 | HTTP 구현하기 | :heavy_check_mark: | :heavy_check_mark: |    :heavy_multiplication_x:    |    :heavy_multiplication_x:    | HTTP client로 동작하여 데이터 송신 및 수신하는 예제               |
 | MQTT 구현하기 | :heavy_check_mark: | :heavy_check_mark: |    :heavy_multiplication_x:    |    :heavy_multiplication_x:    | MQTT client로 동작하여 데이터 송신 및 수신하는 예제               |
