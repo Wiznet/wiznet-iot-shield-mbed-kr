@@ -351,7 +351,7 @@ int8_t deleteAllSMS_BG96(int delflag);
 [link-nucleo-l476rg]: https://os.mbed.com/platforms/ST-Nucleo-L476RG/
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
 [link-bg96-http-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf
-[link-wm-n400mse-atcommand-manual]:./docs/datasheet/WM-N400MSE_AT_Commands_Guide_v1.1.pdf
+[link-wm-n400mse-atcommand-manual]: ./datasheet/WM-N400MSE_AT_Commands_Guide_v1.1.pdf
 
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
