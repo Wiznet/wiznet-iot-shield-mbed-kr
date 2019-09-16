@@ -158,7 +158,7 @@ PSM 예제는 별도로 수정할 부분이 없습니다.
 샘플 코드의 PSM관련 함수는 다음과 같습니다.
 
 ```cpp
-int8_t setPsmActivate_WM01(char * Requested_Periodic_TAU, char * Requested_Active_Time);
+int8_t setPsmActivate_WM01(char *Requested_Periodic_TAU, char *Requested_Active_Time);
 ```
 * PSM TAU와 Active time의 설정 및 기능 활성화를 수행합니다.
 * 파라메터는 "10010101", "00100100" 형태의 문자열입니다.
