@@ -71,7 +71,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 
 | Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
-| Write | AT+CSCS=(chset) | OK |AT+CSCS="IRA"<br>OK |
+| Write | AT+CSCS=(chset) | OK |AT+CSCS="GSM"<br>OK |
 
 **Defined values:**
 
