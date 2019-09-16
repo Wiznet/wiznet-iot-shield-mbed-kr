@@ -108,6 +108,7 @@ MBED web compiler에 접속하여 Log in합니다. 만약 MBED 계정이 없을 
 | Sample code | Repository Link |
 |:--------|:--------|
 | WIZnet-IoTShield-BG96-PING | https://os.mbed.com/users/hkjung/code/WIZnet-IoTShield-BG96-PING/ |
+| WIZnet-IoTShield-WM-N400MSE-PING | https://os.mbed.com/users/AustinKim/code/WIZnet-IoTShield-WM-N400MSE-Ping/ |
 
 
 > WIZnet IoT Shield MBED 시작하기 가이드에서는 개발 환경 구축 및 예제 코드 빌드 실습을 위해 `WIZnet-IoTShield-BG96-PING` 프로젝트를 컴파일하고 실행합니다.
