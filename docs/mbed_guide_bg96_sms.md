@@ -26,7 +26,7 @@
 
 | MCU Board | IoT Shield Interface Board |
 |:--------:|:--------|
-| [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-(WM-N400MSE)<br>WIoT-QC01 (BG96) |
+| [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-WM01 (WM-N400MSE)<br>WIoT-QC01 (BG96) |
 
 <a name="Step-1-Overview"></a>
 ## 소개
