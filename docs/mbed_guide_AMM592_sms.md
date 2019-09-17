@@ -277,7 +277,7 @@ int8_t deleteAllSMS_AMM592(int delflag);
 [compile]: ./imgs/mbed_guide_webide_compile.png
 
 [2]: ./imgs/mbed-guide_AM01_sms-2.PNG
-[3]: ./imgs/mbed-guide_AM01_sms-3.png
+[3]: ./imgs/mbed-guide_AM01_sms-5.png
 [4]: ./imgs/mbed-guide_AM01_sms-4.PNG
 
 
