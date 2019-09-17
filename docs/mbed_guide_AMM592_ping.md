@@ -238,7 +238,7 @@ Ping 테스트 예제 코드는 별도로 수정할 Parameter가 없습니다.
 
 > Chrome 브라우저의 경우, 하단 다운로드 바에서 생성된 바이너리 파일을 확인할 수 있습니다.
 
-> 예제 파일이 성공적으로 컴파일 되면 `WIZnet-IoTShield-BG96-Ping.NUCLEO_L476RG.bin`이 생성됩니다.
+> 예제 파일이 성공적으로 컴파일 되면 `WIZnet-IoTShield-AMM592-Ping.NUCLEO_L476RG.bin`이 생성됩니다.
 
 ![][11]
 
@@ -269,6 +269,6 @@ Ping 테스트 예제 코드는 별도로 수정할 Parameter가 없습니다.
 [serialMonitor]: ./imgs/arduino_guide_ide_serialmonitor.png
 
 [compile]: ./imgs/mbed_guide_webide_compile.png
-[1]: ./imgs/mbed_guide_AM01_ping-01.png
+[1]: ./imgs/mbed_guide_AM01_ping-01.PNG
 [10]: ./imgs/mbed_get_started-10.png
 [11]: ./imgs/mbed_get_started-11.png
