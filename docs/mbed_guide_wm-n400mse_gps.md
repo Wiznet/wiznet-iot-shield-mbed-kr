@@ -155,26 +155,16 @@ Tera term 프로그램을 실행하여 이전 단계에서 확인된 보드의 C
 
 #### 4.3 Get GPS information through a serial terminal
 
-성공적으로 연결이 완료된 후 보드를 리셋하면 다음과 같은 시리얼 출력을 확인 할 수 있습니다.
+성공적으로 연결이 완료된 후 보드를 리셋하면 시리얼 출력을 확인 할 수 있습니다.
 예제 코드는 Cat.M1 모듈의 상태를 확인한 후 GPS를 구동하여 정보를 출력하도록 구성되어 있습니다.
 
 > GPS 위치 정보가 확인 될 때까지 약간의 시간이 필요할 수 있습니다.
-
-![][2]
-
-![][3]
-
-
 
 #### 4.4 See the location via Google Maps service (latitude, longitude)
 
 GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에 입력하면 손쉽게 측정된 위치를 확인 할 수 있습니다.
 
 > Google Maps: https://www.google.com/maps/
-
-확인 결과, 분당구 수내동에 위치한 위즈네트 위치가 정확하게 표시되는 것을 알 수 있습니다.
-
-![][4]
 
 
 <a name="ReadMore"></a>
