@@ -234,9 +234,9 @@ TCP/UDP 소켓을 생성하고 , 서버로 접속을 합니다 . 최대 5 개의
 지정된 소켓의 버퍼로 데이터가 수신 될 경우, 모듈은 @SOCKRCV6=&lt;socket_id&gt;,&lt;data_type&gt;,&lt;length&gt;,&lt;data&gt; 명령을 출력합니다
 
 
-| Type | Syntax | Example
-|:--------|:--------|:--------|:--------|
-| Read | @SOCKRCV6=&lt;socket_id&gt;,&lt;data_type&gt;,&lt;length&gt;,&lt;data&gt;|  &lt;ASCII mode&gt; <br> @SOCKRCV6=0,0,4,ABCD <br><br>&lt;HEXA mode&gt; <br> @SOCKRCV6=0,1,4,61626364
+| Type | Syntax | Example |
+|:--------|:--------|:--------|
+| Read | @SOCKRCV6=&lt;socket_id&gt;,&lt;data_type&gt;,&lt;length&gt;,&lt;data&gt;|  &lt;ASCII mode&gt; <br> @SOCKRCV6=0,0,4,ABCD <br><br>&lt;HEXA mode&gt; <br> @SOCKRCV6=0,1,4,61626364|
 
 
 **Defined values:**
@@ -271,9 +271,9 @@ TCP/UDP 소켓을 생성하고 , 서버로 접속을 합니다 . 최대 5 개의
 서버의 도메인 이름으로 서버의 IP 주소를 획득합니다.
 
 
-| Type | Syntax | Example
-|:--------|:--------|:--------|:--------|
-| Write | AT@DNSQ6=&lt;domain_name&gt;|  AT@DNSQ6=www.google.com <br> OK<br><br> @DNSQ6:2404:6800:4004:80a::2003
+| Type | Syntax | Example |
+|:--------|:--------|:--------|
+| Write | AT@DNSQ6=&lt;domain_name&gt;|  AT@DNSQ6=www.google.com <br> OK<br><br> @DNSQ6:2404:6800:4004:80a::2003|
 
 
 **Defined values:**
