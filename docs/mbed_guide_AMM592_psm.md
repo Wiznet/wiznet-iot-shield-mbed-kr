@@ -222,7 +222,7 @@ Tera term 프로그램을 실행하여 이전 단계에서 확인된 보드의 C
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
-[1]: ./imgs/mbed-guide_AM01_psm-1.png
-[2]: ./imgs/mbed-guide_AM01_psm-2.png
-[3]: ./imgs/mbed-guide_AM01_psm-3.png
+[1]: ./imgs/mbed_guide_AM01_psm-1.png
+[2]: ./imgs/mbed_guide_AM01_psm-2.png
+[3]: ./imgs/mbed_guide_AM01_psm-3.png
 
