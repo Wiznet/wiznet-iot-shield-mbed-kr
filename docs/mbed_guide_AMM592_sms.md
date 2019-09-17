@@ -109,7 +109,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 
 **Syntax:**
 
-| Type | Syntax | Response | Example
+| Type | Syntax | Response | Example |
 |:--------|:--------|:--------|:--------|
 | Test | AT+CMGS=? | OK| - |
 | Write | AT+CMGS=&lt;da&gt;, [&lt;toda&gt;]| +CMGS: &lt;mr&gt;,[&lt;scts&gt;] | AT+CMGS="1502101xxxx", 129<br>> This is a test from .... // 보낼 SMS  데이터 입력 후 Ctrl + z<br>+CMGS: 247<br>OK |
@@ -276,9 +276,9 @@ int8_t deleteAllSMS_AMM592(int delflag);
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 
-[2]: ./imgs/mbed_guide_AM01_sms-2.png
-[3]: ./imgs/mbed_guide_AM01_sms-3.png
-[4]: ./imgs/mbed_guide_AM01_sms-4.png
+[2]: ./imgs/mbed_guide_AM01_sms-2.jpg
+[3]: ./imgs/mbed_guide_AM01_sms-3.jpg
+[4]: ./imgs/mbed_guide_AM01_sms-4.jpg
 
 
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
