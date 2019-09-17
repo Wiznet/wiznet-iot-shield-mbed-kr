@@ -449,7 +449,7 @@ TCP server에서 Cat.M1 모듈이 전송한 메시지를 확인할 수 있습니
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 [1]: ./imgs/mbed_guide_bg96_tcp-1.png
-[2]: ./imgs/mbed-guide_AM01_tcp-02.png
-[3]: ./imgs/mbed-guide_AM01_tcp-03.png
-[4]: ./imgs/mbed-guide_AM01_tcp-04.png
-[5]: ./imgs/mbed-guide_AM01_tcp-05.png
+[2]: ./imgs/mbed-guide_AM01_tcp-02.PNG
+[3]: ./imgs/mbed-guide_AM01_tcp-03.PNG
+[4]: ./imgs/mbed-guide_AM01_tcp-04.PNG
+[5]: ./imgs/mbed-guide_AM01_tcp-05.PNG
