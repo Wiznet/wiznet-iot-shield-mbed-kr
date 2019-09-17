@@ -276,9 +276,9 @@ int8_t deleteAllSMS_AMM592(int delflag);
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 
-[2]: ./imgs/mbed-guide_AM01_sms-2.png
+[2]: ./imgs/mbed-guide_AM01_sms-2.PNG
 [3]: ./imgs/mbed-guide_AM01_sms-3.png
-[4]: ./imgs/mbed-guide_AM01_sms-4.png
+[4]: ./imgs/mbed-guide_AM01_sms-4.PNG
 
 
 [link-bg96-atcommand-manual]: https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf
