@@ -167,14 +167,6 @@ GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에
 > Google Maps: https://www.google.com/maps/
 
 
-<a name="ReadMore"></a>
-## 더 보기
-* [MBED 기반의 Cat.M1 TCP/IP 데이터 통신][mbed-guide-bg96-http]
-* [MBED 기반의 Cat.M1 HTTP 활용 가이드][mbed-guide-bg96-http]
-* [MBED 기반의 Cat.M1 MQTT 활용 가이드][mbed-guide-bg96-mqtt]
-
-
-
 
 [skt-iot-portal]: https://www.sktiot.com/iot/developer/guide/guide/catM1/menu_05/page_01
 [link-mbed-compiler]: https://ide.mbed.com/compiler/
