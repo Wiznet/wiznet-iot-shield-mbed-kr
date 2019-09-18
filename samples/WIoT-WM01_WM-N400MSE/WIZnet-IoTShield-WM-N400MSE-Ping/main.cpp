@@ -38,7 +38,6 @@
 #define WM01_CONNECT_TIMEOUT        15000
 #define WM01_SEND_TIMEOUT           500
 #define WM01_RECV_TIMEOUT           500
-#define WM01_BOOTING_TIME           15000
 
 #define WM01_APN_PROTOCOL           WM01_APN_PROTOCOL_IPv6
 #define WM01_DEFAULT_BAUD_RATE      115200
@@ -323,7 +322,7 @@ int8_t setContextDeactivate_WM01(void)  // Deactivate a PDP Context
 
 void printPingToHost_WM01(char *host, int pingnum)
 {   
-    char resp_str[1024] = {0, };
+    Timer t;
 
     if((pingnum < 1) || (pingnum > 10)) 
     {
@@ -332,13 +331,16 @@ void printPingToHost_WM01(char *host, int pingnum)
         return;
     }
 
-    _parser->set_timeout(1000 * pingnum);
+    _parser->set_timeout((1000 * pingnum) + 2000);
 
     if(_parser->send("AT*PING=%s,%d", host, pingnum) && _parser->recv("OK")) 
     {
-        _parser->read(resp_str, sizeof(resp_str));
+        t.start();
 
-        devlog("%s", resp_str);
+        while(t.read_ms() < ((1000 * pingnum) + 2000))
+        {
+            pc.printf("%c", _parser->getc());
+        }
     }
     
     _parser->set_timeout(WM01_DEFAULT_TIMEOUT);
