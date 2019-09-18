@@ -68,10 +68,8 @@
 
 // Destination (Remote Host)
 // IP address and Port number
-// char dest_ip[] = "222.xxx.xxx.xxx";
-// int  dest_port = xxxx;
-char dest_ip[] = "222.98.173.214";
-int  dest_port = 8080;
+char dest_ip[] = "222.xxx.xxx.xxx";
+int  dest_port = 8000;
 int  protocol = 1;                  // 1 : TCP, 2 : UPD
 int  packet_type = 0;               // 0 : ASCII, 1 : HEX, 2 : Binary
 
