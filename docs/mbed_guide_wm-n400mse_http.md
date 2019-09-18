@@ -135,7 +135,7 @@ Cat.M1 모듈 및 외장형 모뎀은 UART 인터페이스를 통해 활용하�
 
 | Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
-| Read | | +WSORD=(value1),(value2),(value3),(value4) OK<br>(value5) | +WSORD:0,1024,HTTP/1.1 200 OK<br>Date: Wed, 18 Sep 2019 00:45:41 GMT<br>Content-Length: 9174<br>Accept-Ranges: bytes<br>Content-Type: text/xml; charset=UTF-8<br>Connection: close<br><br><?xml version="1.0" encoding="UTF-8" ?><br>...
+| Read | | +WSORD=(value1),(value2),(value3) (value4) OK<br>(value5) | +WSORD:0,1024,HTTP/1.1 200 OK<br>Date: Wed, 18 Sep 2019 00:45:41 GMT<br>Content-Length: 9174<br>Accept-Ranges: bytes<br>Content-Type: text/xml; charset=UTF-8<br>Connection: close<br><br><?xml version="1.0" encoding="UTF-8" ?><br>...
 
 **Defined values:**
 
