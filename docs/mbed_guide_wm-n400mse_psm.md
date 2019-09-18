@@ -194,16 +194,9 @@ Tera term 프로그램을 실행하여 이전 단계에서 확인된 보드의 C
 
 #### 4.3 PSM(Power Saving Mode) Demonstration
 
-성공적으로 연결이 완료된 후 보드를 리셋하면 다음과 같은 시리얼 출력을 확인 할 수 있습니다.
+성공적으로 연결이 완료된 후 보드를 리셋하면 시리얼 출력을 확인 할 수 있습니다.
 예제 코드는 Cat.M1 모듈의 상태를 확인한 후 PSM 설정 여부에 따라 PSM 설정 및 재시작 후 동작을 확인하도록 구성되어 있습니다.
 
-![][1]
-
-<br>.<br>
-<br>.<br>
-<br>.<br>
-
-![][2]
 
 
 [mbed-getting-started]: ./mbed_get_started.md
