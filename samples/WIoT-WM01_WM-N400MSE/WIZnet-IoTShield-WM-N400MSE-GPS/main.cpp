@@ -38,7 +38,6 @@
 #define WM01_CONNECT_TIMEOUT        15000
 #define WM01_SEND_TIMEOUT           500
 #define WM01_RECV_TIMEOUT           500
-#define WM01_BOOTING_TIME           15000
 
 #define WM01_APN_PROTOCOL           WM01_APN_PROTOCOL_IPv6
 #define WM01_DEFAULT_BAUD_RATE      115200
