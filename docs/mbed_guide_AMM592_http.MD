@@ -201,5 +201,5 @@ HTTP 요청에 대한 응답으로 기상청 날씨 정보를 획득하여 시�
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 
-[1]: ./imgs/mbed_guide_AMM592_http-1.PNG
-[2]: ./imgs/mbed_guide_AMM592_http-2.PNG
+[1]: ./imgs/mbed_guide_AM01_http-01.PNG
+[2]: ./imgs/mbed_guide_AM01_http-02.PNG
