@@ -59,7 +59,7 @@ AT@HTTPSND 명령은 HTTP 서버에게 GET Request를 전송합니다. 이 명�
 | Type | Syntax | Response | Example
 |:--------|:--------|:--------|:--------|
 | Test | AT@HTTPSND=? | @HTTPSND:(0-2),(0-10),,,<br><br>OK | -|
-| Write | AT@HTTPSND=&lt;method&gt;,&lt;ssl_enable&gt;,&lt;hex_mode&gt;,&lt;url&gt;,&lt;header&gt;,&lt;body&gt; | OK <br><br>@HTTPSND:&lt;result&gt;| GET request (ASCII) <br> AT@HTTPSND=0,0,0,http://hosturl/path,”-H ‘header string’”,”Body string” <br><br> GET request (HEX)<br>AT@HTTPSND=0,0,1,http://hosturl/path,”2D48202C”,”426F64”<br><br>OK<br><br>@HTTPSND:0 <br><br> POST request <br> AT@HTTPSND=1,0,0,http://hosturl/path, -H‘header string’,Body string <br>OK<br><br>@HTTPSND:0<br>HEAD request<br>AT@HTTPSND=2,0,0,http://hosturl/path<br>OK<br><br> @HTTPSND:0 |
+| Write | AT@HTTPSND=&lt;method&gt;,&lt;ssl_enable&gt;,&lt;hex_mode&gt;,&lt;url&gt;,&lt;header&gt;,&lt;body&gt; | OK <br><br>@HTTPSND:&lt;result&gt;| GET request (ASCII) <br> AT@HTTPSND=0,0,0,http:// hosturl/path,”-H ‘header string’”,”Body string” <br><br> GET request (HEX)<br>AT@HTTPSND=0,0,1,http:// hosturl/path,”2D48202C”,”426F64”<br><br>OK<br><br>@HTTPSND:0 <br><br> POST request <br> AT@HTTPSND=1,0,0,http:// hosturl/path, -H‘header string’,Body string <br>OK<br><br>@HTTPSND:0<br>HEAD request<br>AT@HTTPSND=2,0,0,http:// hosturl/path<br>OK<br><br> @HTTPSND:0 |
 
 
 **Defined values:**
@@ -201,5 +201,5 @@ HTTP 요청에 대한 응답으로 기상청 날씨 정보를 획득하여 시�
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
 
-[1]: ./imgs/mbed_guide_AMM592_http-1.png
-[2]: ./imgs/mbed_guide_AMM592_http-2.png
+[1]: ./imgs/mbed_guide_AMM592_http-1.PNG
+[2]: ./imgs/mbed_guide_AMM592_http-2.PNG
