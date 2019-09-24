@@ -117,7 +117,7 @@ Text 모드에서는 영문과 특수 기호만 지원되며, 한글은 발신�
 **Defined values:**
 
 | Parameter | 범위 | Description |
-|:--------|:--------|
+|:--------|:--------| :--------|
 | &lt;da&gt; | (0-20) | SMS를 보낼 수신 전화번호 |
 | &lt;toda&gt; | (129,145) | SMS 수신측단말의 전화번호 타입<br>129 : National numbering scheme <br>145 : International numbering scheme("+" 포함) |
 
