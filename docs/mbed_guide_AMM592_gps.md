@@ -205,22 +205,11 @@ Tera term 프로그램을 실행하여 이전 단계에서 확인된 보드의 C
 
 ![][2]
 
-![][3]
-
-
-
 #### 4.4 Check the location via Google Maps service (latitude, longitude)
 
 GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에 입력하면 손쉽게 측정된 위치를 확인 할 수 있습니다.
 
 > Google Maps: https://www.google.com/maps/
-
-확인 결과, 분당구 수내동에 위치한 위즈네트 위치가 정확하게 표시되는 것을 알 수 있습니다.
-
-![][4]
-
-
-
 
 
 
@@ -238,10 +227,9 @@ GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
-[1]: ./imgs/mbed_guide_bg96_gps-1.png
-[2]: ./imgs/mbed_guide_bg96_gps-2.png
-[3]: ./imgs/mbed_guide_bg96_gps-3.png
-[4]: ./imgs/mbed_guide_bg96_gps-4.png
+[1]: ./imgs/mbed-guide_AM01_gps-01.png
+[2]: ./imgs/mbed-guide_AM01_gps-02.png
+
 [gnss]: ./imgs/mbed_guide_bg96_gps-gnss.png
 [usbport]: ./imgs/device_manager_quectel_usbport.png
 
