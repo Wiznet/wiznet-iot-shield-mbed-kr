@@ -227,8 +227,8 @@ GPS의 위치 정보 중 위도(latitude)와 경도(longitude)를 Google Maps에
 [import1]: ./imgs/mbed_guide_webide_import.png
 [import2]: ./imgs/mbed_guide_webide_import_repo.png
 [compile]: ./imgs/mbed_guide_webide_compile.png
-[1]: ./imgs/mbed-guide_AM01_gps-01.png
-[2]: ./imgs/mbed-guide_AM01_gps-02.png
+[1]: ./imgs/mbed-guide_AM01_gps-02.png
+[2]: ./imgs/mbed-guide_AM01_gps-01.png
 
 [gnss]: ./imgs/mbed_guide_bg96_gps-gnss.png
 [usbport]: ./imgs/device_manager_quectel_usbport.png
