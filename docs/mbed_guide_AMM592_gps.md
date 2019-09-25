@@ -129,7 +129,7 @@ MBED 온라인 컴파일러에 Log in 하여 상단 메뉴의 `Import`를 클릭
 
 | Sample code | Link |
 |:--------|:--------|
-| WIZnet-IoTShield-AMM592-GPS | hhttps://os.mbed.com/users/vikshin/code/WIZnet-IoTShield-AMM592-GPS/ |
+| WIZnet-IoTShield-AMM592-GPS | https://os.mbed.com/users/vikshin/code/WIZnet-IoTShield-AMM592-GPS/ |
 
 
 > `Import Programs` 팝업 창이 활성화 될 때, Import As 옵션이 Program으로 설정되어 있어야 합니다.
