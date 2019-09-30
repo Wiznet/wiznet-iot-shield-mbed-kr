@@ -15,6 +15,7 @@
 
 > * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
 
+> * 현재 제공되어지는 코드 상에는 Sleep 설정이 정삭적으로 적용되지 않는 버그를 포함하고 있습니다.
 
 ### Development Environment
 * **[Arm MBED Web Compiler][link-mbed-compiler]**
