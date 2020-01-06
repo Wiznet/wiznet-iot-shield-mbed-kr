@@ -1,4 +1,4 @@
-# MBED 기반의 Cat.M1 ThingPlug 연동 가이드
+# MBED 기반의 Cat.M1 ThingPlug 연동 가이드(2019.6.1 이후 신규 회원 가입 중단)
 
 ## 목차
 
