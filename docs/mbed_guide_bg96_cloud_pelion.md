@@ -10,9 +10,9 @@
 ## 시작하기 전에
 
 > * 하드웨어 설정과 개발환경 구축은 **[MBED 기반으로 Cat.M1 디바이스 개발 시작하기][mbed-getting-started]** 문서에 상세히 설명되어 있습니다.
-
+>
 > * Cat.M1과 같은 Cellular IoT 디바이스는 통신 서비스 사업자의 운영 기준 및 규정에 따라 모듈 펌웨어 및 동작 방식에 차이가 있을 수 있습니다. 본 문서는 한국 **[SK Telecom Cat.M1 서비스][skt-iot-portal]** 를 기준으로 작성되었습니다.
-
+>
 > * 본 예제는 아래 링크의 예제를 참고하여 제작하였으며, HW 구성의 경우 외장형 모뎀을 모듈로 변경하였고 SW의 경우 버튼 카운트에 온도를 센싱하여 주기적으로 Pelion IoT Platform으로 전송하도록 수정하였습니다.
 >   * [BG96_K6xF_pelion-example-frdm][link-mbed-bg96-pelion-example]
 
