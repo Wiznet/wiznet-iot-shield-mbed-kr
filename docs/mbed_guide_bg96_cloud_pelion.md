@@ -29,9 +29,9 @@
 ## 소개
 Mbed Pelion IoT Platform은 무엇입니까?
 
-> Mmbed Pelion IoT Platform은 Mmbed OS 디바이스와 연동이 가능하며 디바이스 관리, 연결 관리, 데이터 관리 등과 같은 기능을 제공하는 Platform 입니다. 이를 통해 인터넷 연결 제품(센서, 액추에이터, 내장형 마이크로 컨트롤러, 스마트 애플리케이션 등)과 Mbed Pelion IoT Platform 간에 안전한 양방향 통신을 할 수 있으며 여러 디바이스의 원격 데이터를 수집 및 모니터링 하고 해당 데이터를 저장하여 분석할 수 있습니다. 또한 Mbed Ready Boards를 활용하며 보다 간편하게 Mbed Pelion IoT Platform와 연동하여 사용할 수 있습니다.
-> 
-> 출처 : [Using Mbed OS devices and the Pelion IoT Platform](https://os.mbed.com/docs/mbed-os/v5.13/mbed-os-pelion/index.html)
+Mmbed Pelion IoT Platform은 Mmbed OS 디바이스와 연동이 가능하며 디바이스 관리, 연결 관리, 데이터 관리 등과 같은 기능을 제공하는 Platform 입니다. 이를 통해 인터넷 연결 제품(센서, 액추에이터, 내장형 마이크로 컨트롤러, 스마트 애플리케이션 등)과 Mbed Pelion IoT Platform 간에 안전한 양방향 통신을 할 수 있으며 여러 디바이스의 원격 데이터를 수집 및 모니터링 하고 해당 데이터를 저장하여 분석할 수 있습니다. 또한 Mbed Ready Boards를 활용하며 보다 간편하게 Mbed Pelion IoT Platform와 연동하여 사용할 수 있습니다.
+ 
+출처 : [Using Mbed OS devices and the Pelion IoT Platform](https://os.mbed.com/docs/mbed-os/v5.13/mbed-os-pelion/index.html)
 
 ![][1]
 
