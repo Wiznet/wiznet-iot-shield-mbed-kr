@@ -246,14 +246,14 @@ CONNECT
 OK
 
 // 사물에 대한 인증서를 Cat M1 모듈 파일에 업로드
-AT+QFUPL="815c124058-certificate.pem.crt",1220,100
+AT+QFUPL="YourCertificate.pem.crt",1220,100
 CONNECT
 +QFUPL: 1220,7317
 
 OK
 
 // 프라이빗 키를 Cat M1 모듈 파일에 업로드
-AT+QFUPL="815c124058-private.pem.key",1675,100
+AT+QFUPL="YourPrivate.pem.key",1675,100
 CONNECT
 +QFUPL: 1675,372
 
@@ -274,12 +274,12 @@ AT+QSSLCFG="cacert",2,"AmazonRootCA1.pem"
 OK
 
 // SSL : 클라이언트 인증서 경로 설정
-AT+QSSLCFG="clientcert",2,"815c124058-certificate.pem.crt"
+AT+QSSLCFG="clientcert",2,"YourCertificate.pem.crt"
 
 OK
 
 // SSL : 클라이언트 프라이빗 키  경로 설정
-AT+QSSLCFG="clientkey",2,"815c124058-private.pem.key"
+AT+QSSLCFG="clientkey",2,"YourPrivate.pem.key"
 
 OK
 
@@ -444,13 +444,13 @@ CONNECT
 
 OK
 
-AT+QFUPL="815c124058-certificate.pem.crt",1220,100
+AT+QFUPL="YourCertificate.pem.crt",1220,100
 CONNECT
 +QFUPL: 1220,7317
 
 OK
 
-AT+QFUPL="815c124058-private.pem.key",1675,100
+AT+QFUPL="YourPrivate.pem.key",1675,100
 CONNECT
 +QFUPL: 1675,372
 
@@ -460,11 +460,11 @@ AT+QSSLCFG="cacert",2,"AmazonRootCA1.pem"
 
 OK
 
-AT+QSSLCFG="clientcert",2,"815c124058-certificate.pem.crt"
+AT+QSSLCFG="clientcert",2,"YourCertificate.pem.crt"
 
 OK
 
-AT+QSSLCFG="clientkey",2,"815c124058-private.pem.key"
+AT+QSSLCFG="clientkey",2,"YourPrivate.pem.key"
 
 OK
 
