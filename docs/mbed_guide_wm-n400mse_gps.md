@@ -26,6 +26,7 @@
 | [ST Nucleo-L476RG][link-nucleo-l476rg] | WIoT-WM01 (WM-N400MSE) | External GPS Antenna |
 
 > * 별도의 GNSS Antenna가 필요합니다.
+> * WM-N400MSE의 펌웨어 버전 S130xx.027 이후부터 GPS가 지원됩니다. ATI 혹은 AT$$SWVER 를 이용하여 펌웨어 버전을 확인 후, 이전 버전인 경우, 오픈하우스(openhouse@wiznet.io)에 문의하시기 바랍니다. 
 
 <a name="Step-1-Overview"></a>
 ## 소개
